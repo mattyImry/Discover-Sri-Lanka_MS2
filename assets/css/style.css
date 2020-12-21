@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&family=Lato:wght@300;400;700&display=swap');
+
+body, html {
+    height: 100%;
+    overflow-x: hidden;
+}
+/*---------------INDEX----------------*/
+.btn-success{
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    font-family: Cormorant, sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    border: none !important;
+    padding: 10px 20px 10px 25px; 
+    transition: transform .5s;
+    color:#fafafa;
+}
+
+
+.btn-success:hover{
+    transform: scale(1.2);
+}
+
+.background-main{
+    position: relative;
+    background-image: url("../images/ella2.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.div-intro{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);  
+}
+
+
+/* -----------------MAP PAGE----------------*/
+.navbar-light {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+a.nav-link{
+    color:#fafafa !important;
+    font-family: Lato, sans-serif;
+    font-weight: 600;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+.row-top{
+    background-color: transparent;
+    height: 250px;
+}   
+
+.column-map{
+    position: absolute;
+    height: 340px;
+    /*background-color:yellow ;*/
+    bottom: 40px;
+}
+
+.footer{
+    background-color: rgba(0, 0, 0, 0.2);
+    color:#fafafa;
+    height: 40px;  
+}
+
+.copyright{
+    margin-top: 10px;
+}
+
+.background-map{
+    position: relative;
+    background-image: url("../images/kandi2.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*-----------------MEDIA QUERY-------------*/
+
+@media screen and (max-width: 750px) {
+  .column-map{
+      height: 215px;
+      position: absolute;   
+  }
+}

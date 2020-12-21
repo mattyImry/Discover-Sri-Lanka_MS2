@@ -1,45 +1,66 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+Interactive Front End Development Project Milestone 2 - Code Institute
 
-Welcome USER_NAME,
+![Screenshotproject]
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+# **_Sri Lanka Pearl of Asia_**
 
-## Gitpod Reminders
+This is my second Milestone Project for the [Code Institute](https://codeinstitute.net/) Fullstack Web Developer Diploma. This project is designed to demostrate the skills learnt on the Interactive Frontend Development module. I have choosen to design a website where I can demostrate that I have augumented my HTML and CSS skill but also that I can use JavaScript with JQuery library and public API's to crate a more interactive website.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## **_UX_**
 
-`python3 -m http.server`
+### **_Strategy_**
 
-A blue button should appear to click: *Make Public*,
+ I have designed this website to help the User to discover new holiday destinations. In this case few locations in Sri Lanka. The User can also view the location on Google maps. By following the links in the location's pages the User can gather different information to help him/her choose the desire type of holiday.The 
 
-Another blue button should appear to click: *Open Browser*.
+ ### **_Scope_**
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+ The features I want to implement are :
+ 
+ * Showing Google maps by using Google maps' API 
 
-A blue button should appear to click: *Make Public*,
+ * EmaliJs functionality 
 
-Another blue button should appear to click: *Open Browser*.
+ * Active web links 
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+ * Easy navigation and layout
 
-## Updates Since The Instructional Video
+ * Mobile first approch
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### **_Structure_**
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+The holiday destinations are devided in three main groups depending on which kind of holiday the User is looking for : Relaxing, Cultural and Nature. Inside each group the User will find links to two location's pages which will also be visible in Google Map. 
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### **_Skeleton_**
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+The information for the holiday's locations will be represented in two way.
+1. The User can view from Google maps the geographical location of the destination and by clicking the map's markers can view few key information.
+2. The User can choose to view the location's information by the clicking the drop down menu in the Navbar.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+A contact page link will also be present in the Navbar.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+### **_Surface_**
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+I am looking to achive a visually satisfying web site by using high quality pictures and minimalistic style. I have implemented mobile first approch by using Bootstrap 4. The website will be using .... from Google Font .
+The colors will be minimal due to the usage of full screen pictures. Also I decided to use transparent Navbar ,Footer to allow the picture to be the main element of the pages 
+/ADD COLOR USED IN PAGES/
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
 
---------
+### **_User Story_**
 
-Happy coding!
+* As a tourist I want to be able to discover where is the geographical location of Sri Lanka and where the locations stated in the website are located. I want to be able to see different type of holidays. I want to be able to gather more information about Sri Lanka by using links to external pages.
+The tourist can come back to check for new locations added to the website.
+
+* As a local resident I want to be able to find more information about other locations in Sri Lanka via links to external pages and with the use of the interactive map. 
+The local resident can come back to the site to see if new location and information have been added to the website.
+
+
+### **_Wireframe_**
+
+Link to Wireframes folder: ADD WIREFRAME FOLDER
+
+For designing the Wireframes I have used [Balsamiq](https://balsamiq.com/)
+
+
+## **_Features_**
+
+### **_Existing Features_**
