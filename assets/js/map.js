@@ -1,87 +1,61 @@
-// Code learned via Code Instituite Interactive Fronend end module, youTube Tutorial https://www.youtube.com/watch?v=Zxf1mnP5zcw google documnetation MapsAPI
-//on read me explain that you choose to use this code instead of course one because i wanted to ad pics to marker and text and the video on you tube looked cleaner.
+/* FUNCTION DECLARATION TO CREATE THE MAP */
 
 function initMap() {
-    let options =  {
+    
+    const mapValues = {
+        center: new google.maps.LatLng(7.7156, 80.6919),
         zoom: 6.5,
-        center: { lat: 8.89, lng: 81.89 },
     };
-               
 
-                /*let labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+/* CREATING THE MAP INSIDE THE DIV WITH ID="MAP", ADDING MARKER TO MAPS WITH NAMES AND INFO */
 
-                let locations =[
-                    { lat:5.9460, lng:80.4612 }, //mirissa
-                    { lat:6.0355, lng:80.2152 }, //Galle 
-                    { lat:7.9382, lng:81.0119 }, //polonna
-                    { lat:8.6942, lng:81.1878 }, // nilaveli 
-                ];
-                        
-                let markers = locations.map(function(location, i){
-                    return new google.maps.Marker({
-                        position : location,
-                        label: labels[i % labels.length],
-                    });
-                });
+    const map = new google.maps.Map(document.getElementById("map"), mapValues);
 
-                new MarkerClusterer(map, markers, {
-                        imagePath: "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
-                });*/
+    const myMarks = [{"lat": 5.9448, "lng": 80.4586, "name": "Mirissa", "information":`Breath the sea side vibe, lay on white sandy beaches, <a                                                                                                 href="#">more info</a>.`},
+                    {"lat": 8.6941, "lng": 81.1894, "name": "Nilaveli", "information":`Relax to the view of an infinite beach outlined by coconat trees, <a                                                                     href="#">more info</a>.`},
+                    {"lat": 7.9384, "lng": 81.0049, "name": "Polonnaruwa", "information":`Explore the outstanding and remains of the royal ancient                                                                                 city of the Kingdom of Polonnaruwa <a href="#">more info</a>.`},                                                                   
+                    {"lat": 8.3444, "lng": 80.3986, "name": "Anuradhapura", "information":`One of the ancient capitals of Sri Lanka,visit the stunning                                                                              ruins of the Sinhala civilization <a href="#">more info</a>.`},
+                    {"lat": 6.87100, "lng":81.0489, "name": "Ella", "information":`Come and taste the original Cylon tea, visit tea plantations and                                                                         and green infininate hills <a href="#">more info</a>.`}
+    ];
+/* OBJECT TO STORE INFORMATION'S MARKER*/
 
-    var map = new google.maps.Map(document.getElementById("map"),options);
+    var infoObj = [];
 
-                var markers = [
-                    {   geoLog:{lat:5.9460, lng:80.4612},
-                        //markerImage: "assets/images/beach.jpg",
-                        content: "<h4>Mirissa</h4>, type: relaxing,<a href=#>more info</a>"
-                    },
+    for(i = 0; i < myMarks.length; i++){
+        let contentString = `<h4>` + myMarks[i].name + `</h4>` + `<p>` + myMarks[i].information + `</p>`;
 
-                    {   geoLog:{lat:6.0355, lng:81.0119},
-                        //markerImage: "assets/images/beach.jpg",
-                        content: "<h4>Galle</h4>, type: cultural,<a href=#>more info</a>"
-                    },
+        const markerPosition = new google.maps.Marker({
 
-                    {   geoLog:{lat:7.9382, lng:81.1878},
-                        //markerImage: "assets/images/beach.jpg",
-                        content: "<h4>Polonna</h4>, type: cultural,<a href=#>more info</a>"
-                    },
-
-                    {   geoLog:{lat:8.6942, lng:81.1878},
-                        //markerImage: "assets/images/beach.jpg",
-                        content: "<h4>Polonna</h4>, type: cultural,<a href=#>more info</a>"
-                    },
-                ];
-
-            for (var i = 0; i < markers.length; i++){
-                addMarker(markers[i]);
-            }
-            
-                    // adding markerfunction
-
-    function addMarker(props){
-        var marker = new google.maps.Marker({
-            position: props.geoLog,
-            map: map,
+        position: new google.maps.LatLng(myMarks[i].lat, myMarks[i].lng),
+        map: map,
+        title: myMarks[i].name,
+        animation: google.maps.Animation.DROP,
         });
 
-                    // check for image marker
-        if(props.markerImage){
-            marker.setIcon(props.markerImage); 
-        }
-                    //checkinh information on marker
-        if (props.info) {
-            var infoWindow = new google.maps.InfoWindow({
-            content: props.content,
-            });
+/* CREATING INFOWINDOW */
 
-            marker.addListener("click", function(){
-               infoWindow.open(map, marker);
-               infoWindow.close();
-            });
-        }
-
+        const infowindow = new google.maps.InfoWindow({
+            content: contentString,
+            maxWidth: 500
+        });
+/* SETTING OUR CLICK LISTENER TO DISPLAY INFO ON MARKERS*/
+        markerPosition.addListener("click", function() {
+            closeOtherInfo();
+            infowindow.open(map, markerPosition);
+            infoObj[0] = infowindow;
+        });
     }
+    function closeOtherInfo() {
+        if(infoObj.length > 0){
+            infoObj[0].set("markerPosition", null);
+            infoObj[0].close();
+            infoObj[0].length = 0;
+        }
+    }
+}
+/* CALL FUNCTION TO INITIATE MAP*/
+initMap();
+
+               
 
                 
-}
-        

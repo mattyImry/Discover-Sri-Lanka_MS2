@@ -4,42 +4,9 @@ body, html {
     height: 100%;
     overflow-x: hidden;
 }
-/*---------------INDEX----------------*/
-.btn-success{
-    background-color: rgba(0, 0, 0, 0.2) !important;
-    font-family: Cormorant, sans-serif;
-    font-size: 30px;
-    font-weight: 600;
-    border: none !important;
-    padding: 10px 20px 10px 25px; 
-    transition: transform .5s;
-    color:#fafafa;
-}
 
+/*---------------INDEX.html----------------*/
 
-.btn-success:hover{
-    transform: scale(1.2);
-}
-
-.background-main{
-    position: relative;
-    background-image: url("../images/ella2.jpg");
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.div-intro{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);  
-}
-
-
-/* -----------------MAP PAGE----------------*/
 .navbar-light {
     background-color: rgba(0, 0, 0, 0.2) !important;
 }
@@ -59,8 +26,7 @@ a.nav-link{
 
 .column-map{
     position: absolute;
-    height: 340px;
-    /*background-color:yellow ;*/
+    height: 450px;
     bottom: 40px;
 }
 
