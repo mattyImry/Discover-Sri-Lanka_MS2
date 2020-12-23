@@ -10,13 +10,15 @@ This is my second Milestone Project for the [Code Institute](https://codeinstitu
 
 ### **_Strategy_**
 
- I have designed this website to help the User to discover new holiday destinations. In this case few locations in Sri Lanka. The User can also view the location on Google maps. By following the links in the location's pages the User can gather different information to help him/her choose the desire type of holiday.The 
+ I have designed this website to help the User explore few locations of Sri Lanka. The User can view the locations on Google maps. TO BE COMPLETED.
 
  ### **_Scope_**
 
  The features I want to implement are :
  
  * Showing Google maps by using Google maps' API 
+
+ * Ability to search facilities and places with search function in Google maps
 
  * EmaliJs functionality 
 
@@ -28,11 +30,11 @@ This is my second Milestone Project for the [Code Institute](https://codeinstitu
 
 ### **_Structure_**
 
-The holiday destinations are devided in three main groups depending on which kind of holiday the User is looking for : Relaxing, Cultural and Nature. Inside each group the User will find links to two location's pages which will also be visible in Google Map. 
+The different locations are devided in three main groups depending on what the User is interested in : Relaxing, Cultural and Nature. Inside each group the User will find links of two location's pages which will also be visible on the Google Map. Google Map will use its own API to display custom markers for showing the location on the map and the use of Google API Places to be able to use a search bar whithin the map.
 
 ### **_Skeleton_**
 
-The information for the holiday's locations will be represented in two way.
+The information for the locations will be represented in two way.
 1. The User can view from Google maps the geographical location of the destination and by clicking the map's markers can view few key information.
 2. The User can choose to view the location's information by the clicking the drop down menu in the Navbar.
 
@@ -47,8 +49,11 @@ The colors will be minimal due to the usage of full screen pictures. Also I deci
 
 ### **_User Story_**
 
-* As a tourist I want to be able to discover where is the geographical location of Sri Lanka and where the locations stated in the website are located. I want to be able to see different type of holidays. I want to be able to gather more information about Sri Lanka by using links to external pages.
+* As a tourist I want to be able to discover where is the geographical location of Sri Lanka and where the locations stated in the website are located. I want to be able to see different type of locations. I want to be able to gather more information about Sri Lanka by using links to external pages. I want to be able to , by using the search box in the map, facilities and places to visit. I also want to be able to use a contact form in case more information are needed.
 The tourist can come back to check for new locations added to the website.
+
+* 
+
 
 * As a local resident I want to be able to find more information about other locations in Sri Lanka via links to external pages and with the use of the interactive map. 
 The local resident can come back to the site to see if new location and information have been added to the website.
@@ -64,3 +69,12 @@ For designing the Wireframes I have used [Balsamiq](https://balsamiq.com/)
 ## **_Features_**
 
 ### **_Existing Features_**
+
+
+## **_Credits_**
+
+* The code for Google Maps API has been writter with the support of the documents written by Eamonn Smyth , [Google documentation](https://developers.google.com/maps/documentation/javascript/tutorials), [Youtube tutorial](https://www.youtube.com/watch?v=Xptz0GQ2DO4) by [Pradip Debnath](https://www.youtube.com/channel/UC43N9Z8Fm0gg1Lgpw0eS9rg).
+
+* The code for Google map API search box functionality has been writter with the support of the [Google documentation](https://developers.google.com/maps/documentation/javascript/examples/places-searchbox#maps_places_searchbox-javascript).
+
+* The marker's custom icons in the map are credited to [Maps Icons Collection](https://mapicons.mapsmarker.com).
