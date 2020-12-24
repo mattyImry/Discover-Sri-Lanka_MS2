@@ -1,44 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&family=Lato:wght@300;400;700&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Raleway:wght@300;400;500;600;700&display=swap');
 /*---------------INDEX.html----------------*/
 
 body, html {
     height: 100%;
     overflow-x: hidden;
-}
-
-.navbar-light {
-    background-color: rgba(0, 0, 0, 0.2) !important;
-}
-
-a.nav-link{
-    color:#fafafa !important;
-    font-family: Lato, sans-serif;
-    font-weight: 600;
-    padding-left: 20px !important;
-    padding-right: 20px !important;
-}
-
-.row-top{
-    background-color: transparent;
-    height: 250px;
-}   
-
-.column-map{
-    position: absolute;
-    height: 450px;
-    bottom: 40px;
-}
-
-.footer{
-    background-color: rgba(0, 0, 0, 0.2);
-    color:#fafafa;
-    height: 40px;  
-}
-
-.copyright{
-    margin-top: 10px;
 }
 
 .background-map{
@@ -50,12 +15,64 @@ a.nav-link{
     background-size: cover;
 }
 
-/*---------------MAP STYLING----------------*/
+.row-top{
+    background-color: transparent;
+    height: 250px;
+    padding-top: 25px;
+}   
+
+h1{
+    font-family: Raleway, sans-serif;
+    font-weight: 600;
+}
+
+.intro{
+    font-family: Lato, sans-serif;
+    font-size: 25px;
+    font-weight:400 ;
+}
+
+/*---NAVBAR---*/
+
+.navbar-light {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+a.nav-link{
+    color:#fafafa !important;
+    font-family: Raleway, sans-serif;
+    font-weight: 600;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+/*---FOOTER---*/
+
+.footer{
+    background-color: rgba(0, 0, 0, 0.2);
+    color:#fafafa;
+    height: 40px;  
+}
+
+.copyright{
+    margin-top: 10px;
+}
+
+
+
+/*---MAP STYLING---*/
+
+.column-map{
+    position: absolute;
+    height: 450px;
+    bottom: 40px;
+}
 
 input#search-box-map.pac-target-input{
     margin-top: 10px;
-    width: 145px;
+    width: 140px;
     height: 40px;
+    margin-bottom: 5px;
 }
 
 .gm-style .gm-style-iw{
@@ -68,7 +85,34 @@ input#search-box-map.pac-target-input{
 
 @media screen and (max-width: 750px) {
   .column-map{
-      height: 215px;
+      height: 230px;
       position: absolute;   
   }
+  .intro{
+      font-size: 15px;
+  }
 }
+
+/*---------------CONTACTUS.html----------------*/
+
+.background-contact{
+    position: relative;
+    background-image: url("../images/kalkuda5.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jumbotron{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.form-control {
+    font-weight: 600;
+    font-family: Raleway, sans-serif;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+

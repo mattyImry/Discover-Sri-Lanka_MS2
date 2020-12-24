@@ -1,4 +1,5 @@
-// FUNCTION DECLARATION TO CREATE THE MAP 
+// CODE WAS WRITTEN BY FOLLOWING COURSE MATERIAL, GOOGLE DOCUMENTATION AND DOCUMENTS WRITTEN BY EAMMON SMYTH .
+//FUNCTION DECLARATION TO CREATE THE MAP 
 
 function initMap() {
     
@@ -32,22 +33,21 @@ function initMap() {
         icon: myMarks[i].logo,
         title: myMarks[i].name,
         animation: google.maps.Animation.DROP,
-        });
-
-// CREATING INFOWINDOW 
+        }); 
 
         const infowindow = new google.maps.InfoWindow({
             content: contentString,
             maxWidth: 500
         });
-// SETTING OUR CLICK LISTENER TO DISPLAY INFO ON MARKERS
+        
+// SETTING OUR CLICK LISTENER TO DISPLAY INFO ON MARKERS FUNCTION TO CLOSE INFO WINDOW
         markerPosition.addListener("click", function() {
             closeOtherInfo();
             infowindow.open(map, markerPosition);
             infoObj[0] = infowindow;
         });
     }
-// FUCNTION TO CLOSE INFO WINDOW IF ONE HA BEEN PREVIOUSLY OPENED TO AVOID CLUTTERING ON MAP
+
     function closeOtherInfo() {
         if(infoObj.length > 0){
             infoObj[0].set("markerPosition", null);
@@ -56,16 +56,18 @@ function initMap() {
         }
     }
 
-// ADDING SEARCH BOX IN GOOGLE MAP USING ELEMENT BY ID VIA INDEX.HTML
+//CODE WAS WRITTEN BY FOLLOWING GOOGLE DOCUMENTATION 
+//ADDING SEARCH BOX IN GOOGLE MAP USING ELEMENT BY ID VIA INDEX.HTML
 
     let input = document.getElementById("search-box-map");
     let searchBox = new google.maps.places.SearchBox(input);
-    map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+    map.controls[google.maps.ControlPosition.BOTTOM_LEFT].push(input);
+
 //   BIAS THE SEARCHBOX RESULTS TO MAP VIEWPORT  
     map.addListener("bounds_changed", () => {
         searchBox.setBounds(map.getBounds())
     });
-
+    
 // ADDING LISTENER WHEN THE USER SELECT A PREDICTED RESULT FROM SEARCHBOX AND GET DETAILS FOR THAT PLACE
 
     var markersPlaces = [];
@@ -85,21 +87,12 @@ function initMap() {
         if (!place.geometry) {
             return;
         }
-
-    let icon = {
-        url: place.icon,
-        size: new google.maps.Size(25, 25),
-        origin: new google.maps.Point(0, 0),
-        anchor: new google.maps.Point(17, 34),
-        scaleSize: new google.maps.Size(25, 25)
-    };
     
 
 // CREATE MARKER FOR EACH PLACE SEARCHED
     markersPlaces.push(
         new google.maps.Marker({
             map,
-            icon,
             title: place.name,
             position: place.geometry.location,
         })
@@ -115,7 +108,7 @@ function initMap() {
 }
 
 // CALL FUNCTION TO INITIATE MAP
-initMap();
+//initMap();
 
              
 

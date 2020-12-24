@@ -10,7 +10,7 @@ This is my second Milestone Project for the [Code Institute](https://codeinstitu
 
 ### **_Strategy_**
 
- I have designed this website to help the User explore few locations of Sri Lanka. The User can view the locations on Google maps. TO BE COMPLETED.
+ I have designed this website to help the User explore different Sri Lankan locations. The User can view the locations on Google maps. TO BE COMPLETED.
 
  ### **_Scope_**
 
@@ -35,7 +35,7 @@ The different locations are devided in three main groups depending on what the U
 ### **_Skeleton_**
 
 The information for the locations will be represented in two way.
-1. The User can view from Google maps the geographical location of the destination and by clicking the map's markers can view few key information.
+1. The User can view from Google maps the geographical location of the destination and by clicking the map's markers can view few key information and by clicking the link can access the page's location in the Navbar.
 2. The User can choose to view the location's information by the clicking the drop down menu in the Navbar.
 
 A contact page link will also be present in the Navbar.
@@ -63,7 +63,9 @@ The local resident can come back to the site to see if new location and informat
 
 Link to Wireframes folder: ADD WIREFRAME FOLDER
 
-For designing the Wireframes I have used [Balsamiq](https://balsamiq.com/)
+For designing the Wireframes I have used [Balsamiq](https://balsamiq.com/).
+During the planning stage, when I have designed the Wireframes, I have made the landing page with a full picture and a button that when clicked will let you reach the map page.
+After speaking with my mentor He suggested that the landing page with the button wasn't necessary, in his opinion, due to the fact that pictures where used in the page extesivily and that the landing page with the button was only making the web site less efficient. After thinking about the suggestion and trying to add the page and use it, I realised that the landing page with the button wasn't necessary. I have left the unused wireframe inside the folder anyway.
 
 
 ## **_Features_**
@@ -78,3 +80,9 @@ For designing the Wireframes I have used [Balsamiq](https://balsamiq.com/)
 * The code for Google map API search box functionality has been writter with the support of the [Google documentation](https://developers.google.com/maps/documentation/javascript/examples/places-searchbox#maps_places_searchbox-javascript).
 
 * The marker's custom icons in the map are credited to [Maps Icons Collection](https://mapicons.mapsmarker.com).
+
+### **_Bugs and fixes_**
+
+* Issue 1- When using Google maps search box the search works but the icon displayed on the map related to the search are not rendering correctly on the map.
+
+    Solution 1- Found that when Google Searchbox was trying to create a marker using the marker constructor for the related search , a key object `icon:` was used . This property was creating an icon on the map which wasn't rendered correctly. By removing the key object `icon:` from the marker constructor and the related variable called `icon` the issue has been solve. Now if I search a location or a facilitie a red marker will show without causing any issue. Also the search now is quicker.

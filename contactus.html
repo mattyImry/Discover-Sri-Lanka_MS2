@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcUtBv9l82afDRCJZDlHy4-hNWQNQv8_8&libraries=places&callback=initMap"></script>
     <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
     <title>Discover Sri Lanka</title>
+        
 </head>
 <body>
-    <div class="container-fluid background-map">
+    <div class="container-fluid background-contact">
 
         <!--Navigation bar section-->
         <nav class="navbar navbar-expand-md navbar-light bg-light">
@@ -49,27 +49,48 @@
                 </ul>
             </div>
         </nav>
-        
-        <div class="row row-top">
 
-            <!-- Intro section-->
-            <div class="col-12 text-center col-welcome">
-                <h1>Welcome to Sri Lanka</h1>
-                <p class="intro">Thank you for visiting our web page.<br>To discover what this magical land can offer use the interactive map. At the top of the page you can find links to the locations marked on the map.<br> Enjoy this island of beauty!! </p>
+        <!--Jumbotron section-->
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col text-center">
+                    <h1 >Contact Us</h1>
+                    <p class="intro"> Have you fall in love with Sri Lanka yet?<br> Do you want to know more? <br/> If you answered yes to any of the question feel the form below and we will get back to you as soon as possible!</p>
+                </div>
             </div>
         </div>
-        <div class="row row-map">
 
-            <!--Map section-->
-            <form class="search">
-                <label for="search-box-map"></label>
-                <input id="search-box-map" type="text" placeholder="Search">
+        <!--form section -->
+        <div class="form">
+            <form class="form-booking" id="contact-form" onsubmit="return sendMail(this);">
+
+                <div class="form-group form-group-size">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Name" required/>
+                </div>
+
+                <div class="form-group form-group-size">
+                    <input type="email" class="form-control" name="emailaddress" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required/>
+                    <small id="emailHelp" class="form-text text-muted">no personal details will be stored.</small>
+                </div>
+
+                <div class="form-group form-group-size">
+                    <input type="text" class="form-control" name="subject" id="exampleInputSubject1" placeholder="Subject" required/>
+                </div>
+
+                <div class="form-group form-group-size">
+                    <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="4" placeholder="Message" required></textarea>
+                </div>
+
+                <div class="from-group container ">
+                    <div class="row ">
+                        <div class="col-12 d-flex justify-content-center ">
+                            <input type="submit" value="Submit" class="btn btn-imry-form"/>
+                        </div>
+                    </div>
+                </div>
             </form>
-
-            <!--Empty div to contain map do not remove-->
-            <div class="col-md-4 column-map" id="map">  
-            </div>
         </div>
+        
 
         <!--Footer section-->
         <footer>
@@ -82,6 +103,11 @@
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<script src="assets/js/map.js"></script>  
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+<script type="text/javascript" src="assets/js/email.js">
+            (function(){
+                emailjs.init("user_M1g6gtr6UnTLcQUBonRhH");
+            })();
+    </script>      
 </body>
 </html>
