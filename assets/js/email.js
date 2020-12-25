@@ -1,10 +1,10 @@
-// CODE WAS WRITTEN BY FOLLOWING COURSe MATERIAL AND DOCUMENTATION FROM EMAIL.JS WEBSITE.
+// CODE WAS WRITTEN BY FOLLOWING COURSE MATERIAL AND DOCUMENTATION FROM EMAIL.JS WEBSITE.
 
 function sendMail(contactForm) {
-    emailjs.send(sri_lanka_prj, template_srilanka,{
-        from_name: contactForm.name.value,
-        from_email: contactForm.emailaddress.value,
-        more_info: contactForm.message.value,
+    emailjs.send("sri_lanka_prj", "template_srilanka",{
+        "from_name": contactForm.name.value,
+        "from_email": contactForm.emailaddress.value,
+        "more_info": contactForm.message.value,
         
     })
     .then(
