@@ -64,15 +64,20 @@ a.nav-link{
 
 .column-map{
     position: absolute;
-    height: 450px;
+    height: 400px;
     bottom: 40px;
 }
 
 input#search-box-map.pac-target-input{
     margin-top: 10px;
-    width: 140px;
     height: 40px;
-    margin-bottom: 5px;
+    border: none;
+    margin-right: 10px;
+}
+
+input[type="text" i]{
+    font-size: 18px;
+    text-align: center;
 }
 
 .gm-style .gm-style-iw{
@@ -84,13 +89,17 @@ input#search-box-map.pac-target-input{
 /*-----------------MEDIA QUERY-------------*/
 
 @media screen and (max-width: 750px) {
-  .column-map{
-      height: 230px;
-      position: absolute;   
-  }
-  .intro{
-      font-size: 15px;
-  }
+    .column-map{
+        height: 230px;
+        position: absolute;   
+    }
+    .intro{
+        font-size: 15px;
+    }
+    input[type="text" i]{
+        font-size: 14px;
+    }
+  
 }
 
 /*---------------CONTACTUS.html----------------*/

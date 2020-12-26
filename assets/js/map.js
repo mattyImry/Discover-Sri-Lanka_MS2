@@ -1,11 +1,12 @@
 // CODE WAS WRITTEN BY FOLLOWING COURSE MATERIAL, GOOGLE DOCUMENTATION AND DOCUMENTS WRITTEN BY EAMMON SMYTH .
-//FUNCTION DECLARATION TO CREATE THE MAP 
+// CREATE THE MAP 
 
 function initMap() {
     
     const mapValues = {
         center: new google.maps.LatLng(7.7156, 80.6919),
         zoom: 6.5,
+        zoomControl: false,
     };
 
 // CREATING THE MAP INSIDE THE DIV WITH ID="MAP", ADDING MARKER TO MAPS WITH NAMES AND INFO 
@@ -19,7 +20,7 @@ function initMap() {
                     {"lat": 6.87100, "lng":81.0489, "name": "Ella","logo":"assets/images/peak_icon.png", "information":`Come and taste the original Cylon tea, visit tea plantations and and green infininate hills <a href="#">more info</a>.`}
     ];
 
-// OBJECT TO STORE INFORMATION'S MARKER
+
 
     var infoObj = [];
 
@@ -40,7 +41,7 @@ function initMap() {
             maxWidth: 500
         });
         
-// SETTING OUR CLICK LISTENER TO DISPLAY INFO ON MARKERS FUNCTION TO CLOSE INFO WINDOW
+// SETTING On CLICK LISTENER  
         markerPosition.addListener("click", function() {
             closeOtherInfo();
             infowindow.open(map, markerPosition);
@@ -57,18 +58,18 @@ function initMap() {
     }
 
 //CODE WAS WRITTEN BY FOLLOWING GOOGLE DOCUMENTATION 
-//ADDING SEARCH BOX IN GOOGLE MAP USING ELEMENT BY ID VIA INDEX.HTML
+//ADDING SEARCH BOX IN GOOGLE MAP 
 
     let input = document.getElementById("search-box-map");
     let searchBox = new google.maps.places.SearchBox(input);
-    map.controls[google.maps.ControlPosition.BOTTOM_LEFT].push(input);
+    map.controls[google.maps.ControlPosition.TOP_RIGHT].push(input);
 
  
     map.addListener("bounds_changed", () => {
         searchBox.setBounds(map.getBounds())
     });
     
-// ADDING LISTENER WHEN THE USER SELECT A PREDICTED RESULT FROM SEARCHBOX AND GET DETAILS FOR THAT PLACE
+// ADDING LISTENER WHEN THE USER SELECT RESULT FROM SEARCHBOX 
 
     var markersPlaces = [];
 
@@ -81,7 +82,7 @@ function initMap() {
         markersPlaces.forEach((marker)=>{
             marker.setMap(null);
         });
-// FOR EVERY PLACE GET ICON AND NAME PLUS LOCATION
+
     let bounds = new google.maps.LatLngBounds();
     places.forEach((place) => {
         if (!place.geometry) {
@@ -107,8 +108,6 @@ function initMap() {
     });
 }
 
-// CALL FUNCTION TO INITIATE MAP
-//initMap();
 
              
 
