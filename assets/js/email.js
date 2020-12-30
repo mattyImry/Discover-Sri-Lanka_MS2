@@ -7,14 +7,14 @@ function sendMail(contactForm) {
         "more_info": contactForm.message.value,
         
     })
-    .then(
-        function(response) {
+    .then(alert(`Thank you! Your message was sent`));
+        /*function(response) {
             console.log("SUCCESS", response)
         },
         function(error) {
             console.log("FAILED", error)
         });
-        return false;
+        return false;*/
 
 }
 

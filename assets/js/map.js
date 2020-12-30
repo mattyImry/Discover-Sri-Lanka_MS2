@@ -1,4 +1,5 @@
-// CODE WAS WRITTEN BY FOLLOWING COURSE MATERIAL, GOOGLE DOCUMENTATION AND DOCUMENTS WRITTEN BY EAMMON SMYTH .
+// CODE WAS WRITTEN BY FOLLOWING COURSE MATERIAL, GOOGLE DOCUMENTATION AND DOCUMENTS WRITTEN BY EAMMON SMYTH.
+
 // CREATE THE MAP 
 
 function initMap() {
@@ -41,7 +42,7 @@ function initMap() {
             maxWidth: 500
         });
         
-// SETTING On CLICK LISTENER  
+// SETTING ON CLICK LISTENER TO OPEN INFO WINDOW ABOVE CUSTOM MARKERS
         markerPosition.addListener("click", function() {
             closeOtherInfo();
             infowindow.open(map, markerPosition);
@@ -107,6 +108,8 @@ function initMap() {
     map.fitBounds(bounds);
     });
 }
+
+
 
 
              
