@@ -21,8 +21,6 @@ function initMap() {
                     {"lat": 6.87100, "lng":81.0489, "name": "Ella","logo":"assets/images/peak_icon.png", "information":`Come and taste the original Cylon tea, visit tea plantations and and green infininate hills <a href="#">more info</a>.`}
     ];
 
-
-
     var infoObj = [];
 
     for(i = 0; i < myMarks.length; i++){

@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcUtBv9l82afDRCJZDlHy4-hNWQNQv8_8&libraries=places&callback=initMap"></script>
     <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
     <title>Discover Sri Lanka</title>
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid mirissa-container">
 
         <!--Navigation bar section-->
         <nav class="navbar navbar-expand-md navbar-light bg-light">
@@ -40,7 +39,6 @@
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Nature</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="ella.html">Ella</a>
-                            <a class="dropdown-item" href="#">Another action</a>
                         </div>
                     </li>  
                     <li class="nav-item">
@@ -49,24 +47,35 @@
                 </ul>
             </div>
         </nav>
-        
-        <div class="row row-top">
 
             <!-- Intro section-->
-            <div class="col-12 text-center col-locations">
-                <h1>Welcome to Mirissa</h1>
-                <p >Thank you for visiting our web page.<br>To discover what this magical land can offer use the interactive map. At the top of the page you can find links to the locations marked on the map.<br> Enjoy this island of beauty!! </p>
+        <div class="row row-top mirissa-row">
+            <div class="col-12">
+                <h1 class="title-mirissa">Welcome to Mirissa</h1>
             </div>
         </div>
-        
+    </div>
+
+            <!-- Info Mirissa section-->
+    <div class="container-fluid info-mirissa">  
+        <p class="par-mirissa text-center">Mirissa (Sinhala: මිරිස්ස) is a small town on the south coast of Sri Lanka, located in the Matara District of the Southern Province. It is approximately 150 kilometres (93 mi) south of Colombo and is situated at an elevation of 4 metres (13 ft) above sea level. Mirissa's beach and nightlife make it a popular tourist destination. It is also a fishing port and one of the island's main whale and dolphin watching locations.
+        </p>
+        <section class="text-center mirissa-links">
+            <h3 class="mirissa-h3">Helpfull links</h3>
+            <a  href="https://www.booking.com/searchresults.en-gb.html?dest_id=-2228935;dest_type=city">Booking.com</a><br>
+            <a  href="https://www.airbnb.co.uk/s/all?query=mirissa">Airbnb</a><br>
+            <a href="https://www.tripadvisor.co.uk/">Trip Advisor</a>
+        </section>  
+    </div> 
 
         <!--Footer section-->
-        <footer>
-            <div class="footer fixed-bottom container-fluid text-center">
-                    <p class="copyright">&#169 Imry 2020</p>
-            </div>
-        </footer> 
-    </div>
+    <footer>
+        <div class="footer fixed-bottom container-fluid text-center">
+            <p class="copyright copyr-mirissa">&#169 Imry 2020</p>
+        </div>
+    </footer> 
+    
+    
 <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

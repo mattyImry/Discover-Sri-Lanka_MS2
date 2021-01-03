@@ -2,9 +2,8 @@
 
 $(document).ready(function(){
     $('.nav-link').hover(function() {
-        $(this).trigger('click');
-        }, function() { 
-        
+        $(this).trigger('click');},
+             function() {    
     });
 });
 
