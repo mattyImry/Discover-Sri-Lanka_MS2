@@ -92,7 +92,7 @@ a.nav-link{
 .column-map{
     margin-top: 20px;
     position: absolute;
-    height: 500px;
+    height: 450px;
     
 }
 
@@ -120,6 +120,17 @@ input[type="text1" i]{
     font-weight: 500;
     font-family: Lato, sans-serif;
 }
+/*------------PAGES-LOCATION.HTML-------------*/
+
+.copyright-pages{
+    color: #212529;
+    font-family: Raleway, sans-serif;
+    font-weight:500;
+}
+
+
+
+
 /*------------MIRISSA.HTML-------------*/
 
 .mirissa-container{
@@ -156,19 +167,14 @@ input[type="text1" i]{
     margin-bottom: 25px;
 }
 
-.copyr-mirissa{
-    color: #212529;
-    font-family: Raleway, sans-serif;
-    font-weight:500;
-}
+
 
 /*------------MEDIA QUERY-------------*/
 
 @media screen and (max-width: 768px) {
     .column-map{
         height: 230px;
-        position: absolute;  
-        
+        position: absolute;      
     }
     .intro, .map-text{
         font-size: 15px;   
@@ -189,6 +195,12 @@ input[type="text1" i]{
     } 
     .welcome-title{
         padding-top: 5px;
+    }
+    .title-anura{
+        margin-top: 0px!important;
+        text-align: center!important;
+        
+
     }
 }
 
@@ -235,6 +247,20 @@ form .form-control::placeholder{
     font-family: Raleway, sans-serif;
     color: #fafafa;
     margin-bottom: 50px;
-}    
+}   
 
+/*------------ANURADHAPURA.HTML-------------*/
+
+.anura-container{
+    position: relative;
+    background-image: url("../images/anura1.jpg");
+    height: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title-anura{
+    margin-top: 80px;
+}
 
