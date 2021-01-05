@@ -90,7 +90,7 @@ After speaking with my mentor He suggested that the landing page with the button
 
 ### **_Features to be implemented_**
 
-* Add current user [geolocation](https://developers.google.com/maps/documentation/javascript/geolocation) functonality. 
+* Add current user [geolocation](https://developers.google.com/maps/documentation/javascript/geolocation) functionality. 
 * Add [Google direction API](https://developers.google.com/maps/documentation/directions/overview).
 * Add more locations to the list in Navbar.
 * Add the functionality to book accomodation via this website.
@@ -101,12 +101,17 @@ After speaking with my mentor He suggested that the landing page with the button
 
 * The code for Google map API search box functionality has been writter with the support of the [Google documentation](https://developers.google.com/maps/documentation/javascript/examples/places-searchbox#maps_places_searchbox-javascript).
 
+* The code for showing info windows on searched markers has been written with the support of [Stackoverflow](https://stackoverflow.com/questions/44225974/how-can-i-add-info-window-in-places-searchbox)
+
 * The marker's custom icons in the map are credited to [Maps Icons Collection](https://mapicons.mapsmarker.com).
 * The code for adding hover over drop down functionality found at [Stack Overflow](https://stackoverflow.com/questions/50116307/how-to-make-hover-effect-instead-of-click-in-bootstrap-4-dropdown-menu).
 * The code for backgrond picture using CSS was taken from [W3School](https://www.w3schools.com/howto/howto_css_full_page.asp).
+* A special thanks for the support received by the tutoring team and my mentor.
 
 ### **_Bugs and fixes_**
 
-* Issue 1- When using Google maps search box the search works but the icon displayed on the map related to the search are not rendering correctly on the map.
+* Issue 1 When using Google maps search box the search works but the icon displayed on the map related to the search are not rendering correctly on the map.
 
     Solution 1- Found that when Google Searchbox was trying to create a marker using the marker constructor for the related search , a key object `icon:` was used . This property was creating an icon on the map which wasn't rendered correctly. By removing the key object `icon:` from the marker constructor and the related variable called `icon` the issue has been solve. Now if I search a location or a facility a standard red marker will show without causing any issue. Also the search now is quicker.
+
+* Issue 2 When opening and closing info windows on the map, specially after a search and clicking on the marker to show info windows, I get an intermittent error on the concole. Screen shot here ![infowindowerror](assets/media/issue2.jpg)

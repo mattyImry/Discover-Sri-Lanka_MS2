@@ -42,10 +42,14 @@
                             <a class="dropdown-item" href="ella.html">Ella</a>
                             <a class="dropdown-item" href="#">Another action</a>
                         </div>
-                    </li>  
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>      
                     <li class="nav-item">
                         <a class="nav-link" href="contactus.html">Contact us</a>
                     </li>   
+                     
                 </ul>
             </div>
         </nav>
@@ -54,8 +58,30 @@
 
             <!-- Intro section-->
             <div class="col-12 text-center col-welcome">
-                <h1>Welcome to Sri Lanka</h1>
-                <p class="intro">Thank you for visiting our web page.<br>To discover what this magical land can offer use the interactive map. At the top of the page you can find links to the locations marked on the map.<br> Enjoy this island of beauty!! </p>
+                <h1 class="welcome-title">Welcome to Sri Lanka</h1>
+                <p class="intro">Thank you for visiting our web page.<br>To discover what this magical land can offer use the interactive map. At the top of the page you can find links to the locations marked on the map.<br> Enjoy this island of beauty!!</p>    
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-map-text text-center">
+                <p class="map-text">By using the search box in the map you can search for hotels , restaurants or anything you need for Sri Lanka but if needed for any places in the planet.</p>
+                <button type="button" value="Reset" class="btn btn-reset" id="reset">Reset</button>
+            </div>
+        </div>
+
+        <!--Table for storing infowindow data do not remove-->
+        <div class="table">
+            <div id="info-content">
+                <table>
+                <tr id="iw-url-row" class="iw_table_row">
+                    <td id="iw-icon" class="iw_table_icon"></td>
+                    <td id="iw-url"></td>
+                </tr>
+                <tr id="iw-address-row" class="iw_table_row">
+                    <td class="iw_attribute_name">Address:</td>
+                    <td id="iw-address"></td>
+                </tr>
+                </table>
             </div>
         </div>
 
@@ -69,15 +95,17 @@
             <!--Empty div to contain map do not remove-->
             <div class="col-md-4 column-map" id="map">  
             </div>
+            
         </div>
 
         <!--Footer section-->
-        <footer>
-            <div class="footer fixed-bottom container-fluid text-center">
+        <footer class="footer fixed-bottom">
+            <div class="container-fluid text-center">
                     <p class="copyright">&#169 Imry 2020</p>
             </div>
         </footer> 
     </div>
+
 <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
