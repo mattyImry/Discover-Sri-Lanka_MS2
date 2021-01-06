@@ -5,6 +5,7 @@ Interactive Front End Development Project Milestone 2 - Code Institute
 # **_Sri Lanka Pearl of Asia_**
 
 This is my second Milestone Project for the [Code Institute](https://codeinstitute.net/) Fullstack Web Developer Diploma. This project is designed to demostrate the skills learnt on the Interactive Frontend Development module. I have choosen to design a website where I can demostrate that I have augumented my HTML and CSS skill but also that I can use JavaScript with JQuery library and public API's to crate a more interactive website.
+The deployed project can be found here https://mattyimry.github.io/Discover-Sri-Lanka_MS2/
 
 ## **_UX_**
 

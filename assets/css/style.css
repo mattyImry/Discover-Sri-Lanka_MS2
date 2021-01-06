@@ -71,6 +71,8 @@ a.nav-link{
     padding-right: 20px !important;
 }
 
+
+
 /*-------------FOOTER----------------*/
 .footer{
     background-color: rgba(0, 0, 0, 0.2);
@@ -79,8 +81,6 @@ a.nav-link{
 }
 
 /*---------------MAP----------------*/
-
-
 
 .map-text{
     font-family: Lato, sans-serif;
@@ -120,7 +120,7 @@ input[type="text1" i]{
     font-weight: 500;
     font-family: Lato, sans-serif;
 }
-/*------------PAGES-LOCATION.HTML-------------*/
+/*------------PAGES-LOCATIONS.HTML-------------*/
 
 .copyright-pages{
     color: #212529;
@@ -128,8 +128,25 @@ input[type="text1" i]{
     font-weight:500;
 }
 
+.par-pages{ 
+    font-size: 20px;
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
 
+.info-pages{
+    background-color: #e3edf1;
+}
 
+.pages-h3{
+    margin-bottom: 25px;
+}
+
+.pages-links{
+    padding-bottom: 60px;
+}
 
 /*------------MIRISSA.HTML-------------*/
 
@@ -140,6 +157,7 @@ input[type="text1" i]{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 0;
 }
 
 .title-mirissa{
@@ -147,27 +165,10 @@ input[type="text1" i]{
     margin-top: 130px;
 }
 
-.info-mirissa{
+.navbar-toggler-mirissa{
     background-color: #e3edf1;
+
 }
-
-.par-mirissa{ 
-    font-size: 20px;
-    font-family: Lato, sans-serif;
-    font-weight: 400;
-    padding-top: 40px;
-    padding-bottom: 20px;
-}
-
-.mirissa-links{
-    padding-bottom: 60px;
-}
-
-.mirissa-h3{
-    margin-bottom: 25px;
-}
-
-
 
 /*------------MEDIA QUERY-------------*/
 
@@ -199,11 +200,15 @@ input[type="text1" i]{
     .title-anura{
         margin-top: 0px!important;
         text-align: center!important;
-        
-
+    }
+    .slideshow{
+        display: none;
+    }
+    .pic-mobile{
+        display: initial!important;
     }
 }
-
+    
 /*------------CONTACTUS.html-------------*/
 
 .contact{
@@ -221,8 +226,7 @@ input[type="text1" i]{
 
 .jumbotron{
     background-color: rgba(0, 0, 0, 0.3);
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin: 40px 20px;
 }
 
 .form-control {
@@ -262,5 +266,52 @@ form .form-control::placeholder{
 
 .title-anura{
     margin-top: 80px;
+    text-align: left;
 }
 
+/*------------GALLERY.HTML-------------*/
+
+
+.nav-gallery{
+    margin: 0px 15px;
+   
+}
+
+.container-gallery{
+    padding: 0;
+    position: absolute;  
+    background-image:url("../images/anura1.jpg");
+}
+
+.slidePic{
+    display: none;
+    padding: 0px;
+}
+
+.pre,
+.next{
+    cursor: grab;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin: 0 20px;
+    color: #fafafa!important;
+    font-weight: bold;
+    font-size: 50px;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.next{
+    right: 0;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.pic-mobile{
+    display: none;
+}

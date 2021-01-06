@@ -69,7 +69,7 @@ function initMap() {
     map.controls[google.maps.ControlPosition.TOP_RIGHT].push(input);
  
     map.addListener("bounds_changed", () => {
-        searchBox.setBounds(map.getBounds())
+        searchBox.setBounds(map.getBounds());
     });
     
 // ADDING LISTENER WHEN THE USER SELECT RESULT FROM SEARCHBOX 

@@ -8,13 +8,5 @@ function sendMail(contactForm) {
         
     })
     .then(alert(`Thank you! Your message was sent`));
-        /*function(response) {
-            console.log("SUCCESS", response)
-        },
-        function(error) {
-            console.log("FAILED", error)
-        });
-        return false;*/
-
 }
 
