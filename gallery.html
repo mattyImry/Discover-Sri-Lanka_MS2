@@ -13,10 +13,10 @@
 
         <!--Navigation bar section-->
         <nav class="navbar navbar-expand-md navbar-light bg-light nav-gallery">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler navbar-toggler-mirissa" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse collapse-gallery" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto ml-auto mx-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
@@ -46,29 +46,50 @@
                     </li>   
                     <li class="nav-item">
                         <a class="nav-link" href="contactus.html">Contact us</a>
-                    </li>
-                        
+                    </li>  
                 </ul>
             </div>
         </nav>
-
+        
         <!--Slide picture section-->
         <div class="row slideshow">  
             <div class="slidePic ">
-                <img class="image-slide img-fluid" src="assets/images/anura4.jpg" alt="monkeys in the jungle">
+                <div class="description">Anuradhapura</div>
+                <img class="image-slide img-fluid" src="assets/images/anura4.jpg" alt="monkeys in the jungle">  
+            </div>
+            <div class="slidePic ">
+                <div class="description">Anuradhapura</div>
+                <img class="image-slide img-fluid" src="assets/images/anura2.jpg" alt="river">  
+            </div>  
+            <div class="slidePic ">
+                <div class="description">Anuradhapura-Mihintale</div>
+                <img class="image-slide img-fluid" src="assets/images/mihintale2.jpg" alt="temple on the hill">
             </div>    
             <div class="slidePic ">
-                <img class="image-slide img-fluid" src="assets/images/ella2.1.jpg" alt="green hills">
+                <div class="description">Ella</div>
+                <img class="image-slide img-fluid" src="assets/images/ella3.jpg" alt="green hills with village">
             </div> 
             <div class="slidePic ">
+                <div class="description">Ella</div>
+                <img class="image-slide img-fluid" src="assets/images/ella2.jpg" alt="green hills ">
+            </div> 
+            <div class="slidePic ">
+                <div class="description">Galle</div>
                 <img class="image-slide img-fluid" src="assets/images/galle.jpg" alt="Galle lighthouse">
             </div>  
             <div class="slidePic ">
+                <div class="description">Kalkuda</div>
                 <img class="image-slide img-fluid" src="assets/images/kalkuda2.jpg" alt="long beach">
+            </div>
+            <div class="slidePic ">
+                <div class="description">Passikudah</div>
+                <img class="image-slide img-fluid" src="assets/images/passikudah.jpg" alt="beach with cows">
             </div> 
             <div class="slidePic ">
-                <img class="image-slide img-fluid" src="assets/images/mihintale.jpg" alt="temple on the hill">
+                <div class="description">Polonnaruwa</div>
+                <img class="image-slide img-fluid" src="assets/images/polonnaruwa2.jpg" alt="temple's entrance">
             </div>
+            
         
             <!--Buttons next prev-->
             <a class="pre" onclick="plusSlide(-1)">&#10094 </a>
@@ -79,28 +100,41 @@
         <div class="row-fluid pic-mobile">  
             <div class="pic-gallery ">
                 <img class="image-slide img-fluid" src="assets/images/anura4.jpg" alt="monkeys in the jungle">
-            </div>    
+            </div>  
             <div class="pic-gallery ">
-                <img class="image-slide img-fluid" src="assets/images/ella2.1.jpg" alt="green hills">
+                <img class="image-slide img-fluid" src="assets/images/anura2.jpg" alt="river">
+            </div>  
+            <div class="pic-gallery ">
+                <img class="image-slide img-fluid" src="assets/images/mihintale2.jpg" alt="temple on the hill">
+            </div>
+            <div class="pic-gallery ">
+                <img class="image-slide img-fluid" src="assets/images/ella3.jpg" alt="green hills with village">
+            </div> 
+            <div class="pic-gallery ">
+                <img class="image-slide img-fluid" src="assets/images/ella.jpg" alt="green hills ">
             </div> 
             <div class="pic-gallery ">
                 <img class="image-slide img-fluid" src="assets/images/galle.jpg" alt="Galle lighthouse">
             </div>  
             <div class="pic-gallery ">
                 <img class="image-slide img-fluid" src="assets/images/kalkuda2.jpg" alt="long beach">
-            </div> 
+            </div>
             <div class="pic-gallery ">
-                <img class="image-slide img-fluid" src="assets/images/mihintale.jpg" alt="temple on the hill">
+                <img class="image-slide img-fluid" src="assets/images/passikudah.jpg" alt="beach with cows">
+            </div> 
+            
+            <div class="pic-gallery ">
+                <img class="image-slide img-fluid" src="assets/images/polonnaruwa2.jpg" alt="temple's entrance">
             </div>
         </div>
-    </div>   
         
         <!--Footer section-->
-        <footer>
-            <div class="footer fixed-bottom container-fluid text-center">
-                <p class="copyright">&#169 Imry 2020</p>
+        <footer class="footer fixed-bottom footer-gallery">
+            <div class=" container-fluid text-center">
+                <p class="copyright copy-gallery">&#169 Imry 2020</p>
             </div>
         </footer> 
+    </div> 
     
 <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

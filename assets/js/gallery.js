@@ -1,3 +1,6 @@
+//CODE WRITTEN BY FOLLOWING LESSON WITH W3SCHOOL LINK IN README.MD FILE
+
+
 let slideIndex = 1;
 showSlides(slideIndex);
 

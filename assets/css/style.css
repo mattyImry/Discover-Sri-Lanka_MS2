@@ -33,13 +33,6 @@ h1{
     font-weight:400 ;
 }
 
-.copyright{
-    font-family: Raleway, sans-serif;
-    font-size:16px;
-    font-weight:300;
-    margin-top: 10px;
-}
-
 .table{
     display: none;
 }
@@ -60,7 +53,7 @@ h1{
 /*-------------NAVBAR----------------*/
 
 .navbar-light {
-    background-color: rgba(0, 0, 0, 0.2) !important;
+    background-color: rgba(0, 0, 0, 0.5) !important;
 }
 
 a.nav-link{
@@ -75,9 +68,17 @@ a.nav-link{
 
 /*-------------FOOTER----------------*/
 .footer{
-    background-color: rgba(0, 0, 0, 0.2);
-    color:#fafafa;
+    background-color: rgba(0, 0, 0, 0.5);
     height: 40px;  
+}
+
+.copyright{
+    font-family: Raleway, sans-serif;
+    font-size:16px;
+    font-weight:500;
+    margin-top: 10px;
+    color:#fafafa;
+
 }
 
 /*---------------MAP----------------*/
@@ -110,7 +111,7 @@ input#search-box-map.pac-target-input{
     margin-right: 10px;
 }
 
-input[type="text1" i]{
+input[type="text1"]{
     font-size: 18px;
     text-align: center;
 }
@@ -121,12 +122,6 @@ input[type="text1" i]{
     font-family: Lato, sans-serif;
 }
 /*------------PAGES-LOCATIONS.HTML-------------*/
-
-.copyright-pages{
-    color: #212529;
-    font-family: Raleway, sans-serif;
-    font-weight:500;
-}
 
 .par-pages{ 
     font-size: 20px;
@@ -167,7 +162,6 @@ input[type="text1" i]{
 
 .navbar-toggler-mirissa{
     background-color: #e3edf1;
-
 }
 
 /*------------MEDIA QUERY-------------*/
@@ -181,7 +175,7 @@ input[type="text1" i]{
         font-size: 15px;   
         color: #fafafa;
     }
-    input[type="text1" i]{
+    input[type="text1"]{
         font-size: 14px;
     }
     .messagebox, .subjectbox, .emailbox, .namebox{
@@ -206,6 +200,15 @@ input[type="text1" i]{
     }
     .pic-mobile{
         display: initial!important;
+    }
+    .image-slide{
+    height:auto ;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .image-slide{
+    height: 977px;
     }
 }
     
@@ -271,16 +274,17 @@ form .form-control::placeholder{
 
 /*------------GALLERY.HTML-------------*/
 
-
 .nav-gallery{
-    margin: 0px 15px;
-   
+    left: 0;
+    right: 0;
+    position: absolute;
+    height: 56px;
 }
 
 .container-gallery{
     padding: 0;
     position: absolute;  
-    background-image:url("../images/anura1.jpg");
+    box-sizing: border-box;
 }
 
 .slidePic{
@@ -314,4 +318,26 @@ form .form-control::placeholder{
 
 .pic-mobile{
     display: none;
+}
+
+.description{
+    position: absolute;
+    bottom: 50px;
+    left: 40px;
+    color:#fafafa;
+    font-family: Raleway, sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.navbar-toggler-gallery{
+    background-color: #e3edf1;
+}
+
+.collapse-gallery.collapse.show{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.footer-gallery{
+    position: absolute;
 }
