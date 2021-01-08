@@ -4,7 +4,7 @@ function initMap() {
     
     const mapValues = {
         center: new google.maps.LatLng(7.7156, 80.6919),
-        zoom: 7.5,
+        zoom: 7,
         zoomControl: false,
     };
 

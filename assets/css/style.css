@@ -87,14 +87,14 @@ a.nav-link{
     font-family: Lato, sans-serif;
     font-size: 18px;
     font-weight:400;
-    padding-top: 20px;
+    margin-top: 150px;
+    
+    
 }
 
 .column-map{
     margin-top: 20px;
-    position: absolute;
-    height: 450px;
-    
+    height: 350px;
 }
 
 .btn-reset{
@@ -166,14 +166,12 @@ input[type="text1"]{
 
 /*------------MEDIA QUERY-------------*/
 
-@media screen and (max-width: 768px) {
-    .column-map{
-        height: 230px;
-        position: absolute;      
-    }
+@media screen and (max-width: 576px) {
+    
     .intro, .map-text{
         font-size: 15px;   
         color: #fafafa;
+        margin-top: 30px;
     }
     input[type="text1"]{
         font-size: 14px;
@@ -200,17 +198,9 @@ input[type="text1"]{
     }
     .pic-mobile{
         display: initial!important;
-    }
-    .image-slide{
-    height:auto ;
-    }
+    }   
 }
 
-@media only screen and (min-width: 768px){
-    .image-slide{
-    height: 977px;
-    }
-}
     
 /*------------CONTACTUS.html-------------*/
 
@@ -268,8 +258,19 @@ form .form-control::placeholder{
 }
 
 .title-anura{
-    margin-top: 80px;
+    margin-top: 50px;
     text-align: left;
+}
+
+/*------------POLONNARUWA.HTML-------------*/
+
+.polonna-container{
+    position: relative;
+    background-image: url("../images/polonnaruwa2.jpg");
+    height: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /*------------GALLERY.HTML-------------*/
@@ -340,4 +341,8 @@ form .form-control::placeholder{
 
 .footer-gallery{
     position: absolute;
+}
+
+.image-slide{
+    height: auto;
 }
