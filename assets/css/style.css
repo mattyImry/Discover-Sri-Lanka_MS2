@@ -9,7 +9,7 @@ body, html {
 .background-map{
     position: relative;
     background-image: url("../images/kandi2.jpg");
-    height: 100%;
+    height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -70,8 +70,6 @@ a.nav-link{
     padding-right: 20px !important;
 }
 
-
-
 /*-------------FOOTER----------------*/
 .footer{
     background-color: rgba(0, 0, 0, 0.5);
@@ -116,9 +114,9 @@ input#search-box-map.pac-target-input{
     margin-right: 10px;
 }
 
-input[type="text1"]{
+input[type="text"]{
     font-size: 18px;
-    text-align: center;
+    
 }
 
 .gm-style .gm-style-iw{
@@ -154,7 +152,7 @@ input[type="text1"]{
 .mirissa-container{
     position: relative;
     background-image: url("../images/mirissa1.jpg");
-    height: 70%;
+    height: 70vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -172,7 +170,7 @@ input[type="text1"]{
 
 /*------------MEDIA QUERY-------------*/
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
     
     .intro, .map-text{
         font-size: 15px; 
@@ -201,6 +199,7 @@ input[type="text1"]{
     }
     .pic-mobile{
         display: initial!important;
+        
     }  
     .title-polonna{
         color: #fafafa;
@@ -208,6 +207,7 @@ input[type="text1"]{
         background-color: rgba(0, 0, 0, 0.3);
     }
 }
+
 
     
 /*------------CONTACTUS.html-------------*/
@@ -243,7 +243,7 @@ form .form-control::placeholder{
 }
 
 .messagebox, .subjectbox, .emailbox, .namebox{
-    margin-bottom: 50px;
+    margin-bottom: 55px;
 }
 
 .btn-submit{
@@ -259,7 +259,7 @@ form .form-control::placeholder{
 .anura-container{
     position: relative;
     background-image: url("../images/anura1.jpg");
-    height: 70%;
+    height: 70vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -275,7 +275,7 @@ form .form-control::placeholder{
 .polonna-container{
     position: relative;
     background-image: url("../images/polonnaruwa1.jpg");
-    height: 70%;
+    height: 70vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -291,7 +291,7 @@ form .form-control::placeholder{
 .ella-container{
     position: relative;
     background-image: url("../images/ella.jpg");
-    height: 70%;
+    height: 70vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -306,7 +306,7 @@ form .form-control::placeholder{
 .nilaveli-container{
     position: relative;
     background-image: url("../images/nilaveli.jpg");
-    height: 70%;
+    height: 70vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -386,6 +386,3 @@ form .form-control::placeholder{
     position: absolute;
 }
 
-.image-slide{
-    height: auto;
-}

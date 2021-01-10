@@ -7,12 +7,8 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
     <title>Discover Sri Lanka</title>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-    <script type="text/javascript" >
-            (function(){
-                emailjs.init("user_M1g6gtr6UnTLcQUBonRhH");
-            })();
-    </script>         
+    <script  src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+         
 </head>
 <body>
     <div class="container-fluid background-contact">
@@ -71,7 +67,7 @@
         <!--form section -->
         <form class="form-booking" id="contact-form" onsubmit="return sendMail(this);">
             <input type="text" class="form-control namebox" id="name" name="name" placeholder="Name" required/>
-            <input type="email" class="form-control emailbox" name="emailaddress" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required/>
+            <input type="email" class="form-control emailbox" name="emailaddress" id="exampleInputEmail1" placeholder="Enter email" required/>
             <input type="text" class="form-control subjectbox" name="subject" id="exampleInputSubject1" placeholder="Subject" required/>
             <textarea class="form-control messagebox" name="message" id="exampleFormControlTextarea1" rows="4" placeholder="Message" required></textarea>
             <div class="container-fluid d-flex justify-content-center ">
@@ -83,15 +79,20 @@
         <!--Footer section-->
         <footer>
             <div class="footer fixed-bottom container-fluid text-center">
-                    <p class="copyright">&#169 Imry 2020</p>
+                    <p class="copyright">&#169; Imry 2020</p>
             </div>
         </footer> 
     
-<script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
+
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script src="assets/js/menuover.js"></script>
 <script src="assets/js/email.js"></script>
+<script >
+    (function(){
+        emailjs.init("user_M1g6gtr6UnTLcQUBonRhH");
+    })();
+</script>    
 </body>
 </html>

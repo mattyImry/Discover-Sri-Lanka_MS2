@@ -50,21 +50,17 @@ The information for the locations will be represented in two way via the infowin
 I am looking to achive a visually satisfying web site by using high quality pictures and minimalistic style. I have implemented mobile first approch by using Bootstrap 4. The website will be using as family font Lato for the paragraph and Raleway for menus and title. Both font are taken from [Google Font](https://fonts.google.com/) .
 The colors will be minimal due to the usage of full screen pictures. Also I decided to use semi transparent Navbar and Footer because I think that this style gives the website a more streamlined style.
 I have used the color #fafafa for navbar links, border and placeholders in the contact form, including the submit buttons. This color has also been used in the copyright text in the footer.
-The backgrond color for the text area is #e3edf1. The color #e3edf1 has also been used for the navbar toggler in mobile view, background color for the rest button in the home page.
+The backgrond color for the text area is #e3edf1. The color #e3edf1 has also been used for the navbar toggler in mobile view, background color for the reset button in the home page. In some pages, when in mobile view, the text has been backed up by a semimtransparent black background with text in color #fafafa to ease the reading for the users.
 
 
 ### **_User Story_**
 
 * As a tourist I want to be able to discover where is the geographical location of Sri Lanka and where the locations stated in the website are located.
-* As a tourist I want to be able to see different type of locations. 
 * As a tourist I want to be able to gather more information about Sri Lanka by using links to external pages. 
 * As a tourist I want to be able to , by using the search box in the map, search for  facilities and places to visit, find addresses. 
 * As a tourist I want to be able to use a contact form in case more information are needed.
 * As a tourist I want to be able, in the future, to come back and check for new locations added to the website.
-
-
 * As a local resident I want to be able to find more information about other locations in Sri Lanka via links to external pages and with the use of the interactive map. 
-
 * As a local resident I want to be able, in the future,to come back to the web site to see if new locationS and informationS have been added to the website.
 * As a local resident I want to be able to , by using the search box in the map, search for  facilities and places to visit, find addresses. 
 
@@ -122,17 +118,20 @@ Also [jQuery](https://jquery.com/) technology has been used to show the links in
 10. [EmailJS](https://www.emailjs.com/) Has been used to be able to received an email from the User with a request/message by filling the form in  the contact page.
 11. [Tiny JPG](https://tinyjpg.com/) Has been used to compress the picture to reduce loading time of the project.
 
+
 ## **_Testing_**
 
-
+For the testing section please refer to [TESTING.md](TESTING.md) file.
 
 ## **_Bugs and fixes_**
 
 * Issue 1 When using Google maps search box the search works but the icon displayed on the map related to the search are not rendering correctly on the map.
 
-    Solution 1- Found that when Google Searchbox was trying to create a marker using the marker constructor for the related search , a key object `icon:` was used . This property was creating an icon on the map which wasn't rendered correctly. By removing the key object `icon:` from the marker constructor and the related variable called `icon` the issue has been solve. Now if I search a location or a facility a standard red marker will show without causing any issue. Also the search now is quicker.
+    Solution 1 Found that when Google Searchbox was trying to create a marker using the marker constructor for the related search , a key object `icon:` was used . This property was creating an icon on the map which wasn't rendered correctly. By removing the key object `icon:` from the marker constructor and the related variable called `icon` the issue has been solve. Now if I search a location or a facility a standard red marker will show without causing any issue. Also the search now is quicker.
 
 * Issue 2 When opening and closing info windows on the map, specially after a search and clicking on the marker to show info windows, I get an intermittent error on the concole. [Issue2](https://github.com/mattyImry/Discover-Sri-Lanka_MS2/blob/master/assets/media/issue2.jpg).
+
+* Issue 3 When using the Developer tool with Google Chrome and checking the layout on the Ipad Pro for the Gallery page, the layout is incorrect. I do not have an Ipad pro to check phisically. I pad 2 works both on the phisical machine and with Developer tool in Google Chrome. I will try to change the picture size to see if changes but do not have enough time now.
 
 ## **_Deployment_**
 
@@ -181,6 +180,8 @@ To clone the repository for collaboration  using the command line following this
 * The code for Google Maps API has been writter with the support of the documents written by Eamonn Smyth [pdf here](https://github.com/mattyImry/Discover-Sri-Lanka_MS2/blob/master/assets/media/how_to_google_map.pdf), [Google documentation](https://developers.google.com/maps/documentation/javascript/tutorials), [Youtube tutorial](https://www.youtube.com/watch?v=Xptz0GQ2DO4) by [Pradip Debnath](https://www.youtube.com/channel/UC43N9Z8Fm0gg1Lgpw0eS9rg).
 
 * The code for Google map API search box functionality has been writter with the support of the [Google documentation](https://developers.google.com/maps/documentation/javascript/examples/places-searchbox#maps_places_searchbox-javascript).
+
+* The Reset button idea was taken by this project from [Code Institute](https://codeinstitute.net/) student. Project link [Link](https://github.com/Seabhac-94/southpaw_comedy).
 
 * The code for showing info windows on searched markers has been written with the support of [Stackoverflow](https://stackoverflow.com/questions/44225974/how-can-i-add-info-window-in-places-searchbox)
 

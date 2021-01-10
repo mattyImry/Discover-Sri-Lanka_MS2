@@ -5,7 +5,7 @@ function initMap() {
     const mapValues = {
         center: new google.maps.LatLng(7.7156, 80.6919),
         zoom: 6.5,
-        zoomControl: false,
+        zoomControl: true,
     };
 
 // CREATING THE MAP INSIDE THE DIV WITH ID="MAP", ADDING MARKER TO MAPS WITH NAMES AND INFO 
@@ -144,6 +144,6 @@ function initMap() {
 // RESET MAP ZOOM
     $('#reset').click(function(){
         map.setCenter({lat:7.7156, lng:80.6919});
-        map.setZoom(7.5);
+        map.setZoom(6.5);
     });
 }
