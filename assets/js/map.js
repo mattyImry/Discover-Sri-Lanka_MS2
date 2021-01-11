@@ -13,9 +13,9 @@ function initMap() {
     const map = new google.maps.Map(document.getElementById("map"), mapValues);
     const myMarks = [{"lat": 5.9448, "lng": 80.4586, "name": "Mirissa", "logo":"assets/images/beach_icon.png", "information":`Breath the sea side                                              vibe, lay on white sandy beaches, <a href="mirissa.html">more info</a>.`},
                     {"lat": 8.6941, "lng": 81.1894, "name": "Nilaveli","logo":"assets/images/beach_icon.png", "information":`Relax to the view of an infinite beach outlined by coconat trees, <a href="nilaveli.html">more info</a>.`},
-                    {"lat": 7.9384, "lng": 81.0049, "name": "Polonnaruwa","logo":"assets/images/temple_icon.png", "information":`Explore the outstanding and remains of the royal ancient city of the Kingdom of Polonnaruwa <a href="polonnaruwa.html">more info</a>.`},                                                                   
+                    {"lat": 7.9384, "lng": 81.0049, "name": "Polonnaruwa","logo":"assets/images/temple_icon.png", "information":`Explore the outstanding remains of the royal ancient city of the Kingdom of Polonnaruwa <a href="polonnaruwa.html">more info</a>.`},                                                                   
                     {"lat": 8.3444, "lng": 80.3986, "name": "Anuradhapura","logo":"assets/images/temple_icon.png", "information":`One of the ancient capitals of Sri Lanka,visit the stunning ruins of the Sinhala civilization <a href="anuradhapura.html">more info</a>.`},
-                    {"lat": 6.87100, "lng":81.0489, "name": "Ella","logo":"assets/images/peak_icon.png", "information":`Come and taste the original Cylon tea, visit tea plantations and and green infininate hills <a href="ella.html">more info</a>.`}
+                    {"lat": 6.87100, "lng":81.0489, "name": "Ella","logo":"assets/images/peak_icon.png", "information":`Come and taste the original Cylon tea, visit tea plantations and beautiful green hills <a href="ella.html">more info</a>.`}
     ];
 
     var infoObj = [];

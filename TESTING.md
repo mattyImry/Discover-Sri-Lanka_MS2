@@ -2,14 +2,119 @@
 
 ### **_Automated testing_**
 
-* html pages tested with [W3C HTML Validator](https://validator.w3.org/#validate_by_input).
-    All pages had an error. After the copyright code `&#169` missing semicolomn. Added semicolon no issue.
-    Gallery page had an error. After the arrows for changing picture code `&#10094` and `&#10095` missing semicolon. Added semicolon no issue.
+* html pages tested with [W3C HTML Validator](https://validator.w3.org/#validate_by_input).  
+All pages had an error. After the copyright code `&#169` missing semicolon.  Added semicolon no issue.  
+Gallery page had an error. After the arrows for changing picture code `&#10094` and `&#10095` missing semicolon. Added semicolon no issue.  
 * CSS file has been tested with [W3C CSS validator](https://jigsaw.w3.org/css-validator/). No errors.
 
-* JavaScript files has benn tested with [Jshint](https://jshint.com/). No errors.
+* JavaScript files has been tested with [Jshint](https://jshint.com/). No errors.
 
-* [LightHouse Google](https://developers.google.com/web/tools/lighthouse#devtools) TO COMPLETE.
+    The followings warning has been shown for email.js file:  
+
+    One warning
+    line 10	'template literal syntax' is only available in ES6 (use 'esversion: 6').  
+    One undefined variable: line 4 emailjs  
+    One unused variable: line 3	sendMail
+
+
+    The followings warning has been shown for gallery.js file: 
+
+    line 4	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).  
+    line 15	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).  
+    line 16	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).  
+    line 18	Missing semicolon.  If I add semicolon teels me to remove it.  
+    line 19	Missing semicolon.  If I add semicolon teels me to remove it.  
+    One unused variable  
+    line 9	plusSlide. This is a name of a function .Cannot remove.
+
+    The followings warning has been shown for menuover.js file:  
+    
+    One undefined variable  
+    line 3	$  I cannot change short hand for Jquery  
+    line 4	$  I cannot change short hand for Jquery
+    line 5	$  I cannot change short hand for Jquery  
+
+
+    The followings warning has been shown for map.js file: 
+
+    25 warnings
+line 5	'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).  
+line 13	'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).  
+line 14	'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).  
+line 14	'template literal syntax' is only available in ES6 (use 'esversion: 6').  
+line 15	'template literal syntax' is only available in ES6 (use 'esversion: 6').  
+line 16	'template literal syntax' is only available in ES6 (use 'esversion: 6').  
+line 17	'template literal syntax' is only available in ES6 (use 'esversion: 6').  
+line 18	'template literal syntax' is only available in ES6 (use 'esversion: 6').  
+line 24	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).  
+line 24	'template literal syntax' is only available in ES6 (use 'esversion: 6').    
+line 24	'template literal syntax' is only available in ES6 (use 'esversion: 6').  
+line 24	'template literal syntax' is only available in ES6 (use 'esversion: 6').  
+line 24	'template literal syntax' is only available in ES6 (use 'esversion: 6').   
+line 26	'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).  
+line 35	'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).  
+line 42	Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (closeOtherInfo, infoObj)  
+line 67	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).  
+line 68	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).  
+line 71	'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6').  
+line 79	'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6').  
+line 80	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).  
+line 85	'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6').  
+line 91	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).  
+line 93	'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6').  
+line 101	'object short notation' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz). 
+
+
+    Five undefined variables.  All the followings are not undefined variables.   
+
+
+    line 6	google  
+    line 13	google  
+    line 26	google  
+    line 28	google  
+    line 32	google  
+    line 35	google  
+    line 61	google  
+    line 62	google  
+    line 68	google  
+    line 69	google  
+    line 91	google  
+    line 100	google  
+    line 109	google  
+    line 127	google  
+    line 23	i  
+    line 23	i  
+    line 23	i  
+    line 24	i  
+    line 24	i  
+    line 28	i  
+    line 28	i  
+    line 30	i  
+    line 31	i  
+    line 54	infoWindow  
+    line 62	infoWindow  
+    line 130	infoWindow  
+    line 61	places  
+    line 125	places  
+    line 145	$  
+    One unused variable  
+line 3	initMap . It not a variable but name of function
+ 
+
+
+
+
+* [LightHouse Google](https://developers.google.com/web/tools/lighthouse#devtools).  
+I have tested the mobile and desktop verions of my web site with Google Lighthouse.
+Please refer to screen shots.  
+
+    [mobile](assets/media/lighthouse_mobile.JPG) Screenshot
+
+    I have notice a slow performance for the mobile view. I will learn more about Lighthouse as it's a very powerfull tool. So in the future i can make my website more efficients.
+
+
+    [desktop](assets/media/lighthouse_desktop.JPG) Screenshot
+
 
 
 
@@ -22,51 +127,55 @@ Testing - Opening https://mattyimry.github.io/Discover-Sri-Lanka_MS2/
 Result - Google Map loads correctly with custom markers, correct location (Sri Lanka), correct zoom and controls. All Google map controls on the map are working as expected.    
 
 Expected - Google Map search box to return item that Users searched for.  
-Testing - Entered "Hotel".  
+Testing - Entered "Hotel" in search box.  
 Result - Google Map return markers on map for hotels.  
-Testing - Entered "restaurant".   
-Result - Google Map return markers on map for.  
+Testing - Entered "Restaurant" in search box.   
+Result - Google Map return markers on map for restaurant.  
 
-Expected - User search facilities in search box. Clicking on Google searched marker. An info window opens with information for the search, clickable links and icon.   
+Expected - User search facilities in search box. Clicking on Google searched marker. An info window opens with information for the facility searched, clickable links and icon.   
 Testing - Clicked searched marker, info window opens with correct facility's information and clickable link.   
 Testing - Clickable links open the Google map page for the facility searched.  
 Result - Info window and clickable link working as expected.
 
-Expected - Clicking on Mirissa custom marker. An info window opens with information for Mirissa and clickable links.    
+Expected - Clicking on Mirissa custom marker. An info window opens with information for Mirissa and clickable link.    
 Testing - Clicked custom marker Mirissa info window opens with correct location's information and clickable link.   
-Testing - Clickable links open the Mirissa page. Same page available in drop down menu present in navbar.  
+Testing - Clickable link opens the Mirissa page. Same page available in drop down menu present in navbar.  
 Result - Info window and clickable link working as expected.
 
-Expected - Clicking on Nilaveli custom marker. An info window opens with information for Nilaveli and clickable links.  
+Expected - Clicking on Nilaveli custom marker. An info window opens with information for Nilaveli and clickable link.  
 Testing - Clicked custom marker Nilaveli info window opens with correct location's information and clickable link.   
-Testing - Clickable links open the Nilaveli page. Same page available in drop down menu present in navbar.  
+Testing - Clickable link opens the Nilaveli page. Same page available in drop down menu present in navbar.  
 Result - Info window and clickable link working as expected.
 
-Expected - Clicking on Anuradhapura custom marker. An info window opens with information for Anuradhapura and clickable links.  
+Expected - Clicking on Anuradhapura custom marker. An info window opens with information for Anuradhapura and clickable link.  
 Testing - Clicked custom marker Anuradhapura info window opens with correct location's information and clickable link.  
-Testing - Clickable links open the Anuradhapura page. Same page available in drop down menu present in navbar.  
+Testing - Clickable link opens the Anuradhapura page. Same page available in drop down menu present in navbar.  
 Result - Info window and clickable link working as expected.
 
-Expected - Clicking on Polonnaruwa custom marker. An info window opens with information for Polonnaruwa and clickable links.  
+Expected - Clicking on Polonnaruwa custom marker. An info window opens with information for Polonnaruwa and clickable link.  
 Testing - Clicked custom marker Polonnaruwa info window opens with correct location's information and clickable link.  
-Testing - Clickable links open the Polonnaruwa page. Same page available in drop down menu present in navbar.  
+Testing - Clickable link opens the Polonnaruwa page. Same page available in drop down menu present in navbar.  
 Result - Info window and clickable link working as expected.  
 
-Expected - Clicking on Ella custom marker. An info window opens with information for Ella and clickable links.  
+Expected - Clicking on Ella custom marker. An info window opens with information for Ella and clickable link.  
 Testing - Clicked custom marker Ella info window opens with correct location's information and clickable link. 
-Testing - Clickable links open the Ella page. Same page available in drop down menu present in navbar.  
+Testing - Clickable link opens the Ella page. Same page available in drop down menu present in navbar.  
 Result - Info window and clickable link working as expected.
    
-Expected - Reset button reset map returning to its default state.  
+Expected - Reset button reset map returning to its default zoom state.  
 Testing - Zoomed in on map, clicked button.  
-Result - Reset button works as expected.  
+Result - Reset button works as expected maps back to initial zoom state.  
 
 
 #### **_Navbar_**
 
-Expected - When mouse hovering over drop down menu, the lists of locations are shown.  
-Testing - Mouse hovering over drop down menu.  
-Result - The drop down menu lists are shown as expected.  
+Expected - When mouse hovering over drop down menus, the lists of locations are shown.  
+Testing - Mouse hovering over drop down menus.  
+Result - The drop down menus lists are shown as expected.  
+
+Expected - Link in navbar to open Home page.  
+Testing - Clicked on "Home".  
+Result - Home link in navbar opens Home page as expected.  
 
 
 Expected - Links in navbar to open Mirissa page.    
@@ -112,6 +221,40 @@ Expected - Link "Trip Advisor" to open Tripadvisor.co.uk page for Mirissa in a n
 Testing - Clicked "Trip Advisor"  
 Result - New window opens as expected.  
 
+Expected - When mouse hovering over drop down menus, the lists of locations are shown.  
+Testing - Mouse hovering over drop down menus.  
+Result - The drop down menus lists are shown as expected.  
+
+Expected - Link in navbar to open Home page.  
+Testing - Clicked on "Home".  
+Result - Home link in navbar opens Home page as expected.  
+ 
+
+Expected - Links in navbar to open Nilaveli page.    
+Testing - Clicking on "Nilaveli".    
+Result - Nilaveli link in navbar opens Nilaveli page as expected.  
+
+Expected - Links in navbar to open Anuradhapura page.    
+Testing - Clicking on "Anuradhapura" .    
+Result - Anuradhapura link in navbar opens Anuradhapura page as expected.
+
+Expected - Links in navbar to open Polonnaruwa page.    
+Testing - Clicking on "Polonnaruwa".    
+Result - Polonnaruwa link in navbar opens Polonnaruwa page as expected.
+
+Expected - Links in navbar to open Ella page.    
+Testing - Clicking on "Ella".      
+Result - Ella link in navbar opens Ella page as expected.
+
+Expected - Link in navbar to open Gallery page.  
+Testing - Clicked on "Gallery".    
+Result - Gallery link in navbar opens Gallery page as expected.  
+
+Expected - Link in navbar to open Contact page.  
+Testing - Clicked on "Contact".    
+Result - Contact link in navbar opens Contact page as expected.
+
+
 #### **_Nilaveli page_**
 
 Expected - Link "Booking.com" to open Booking.com page for Nilaveli in a new window.  
@@ -125,6 +268,39 @@ Result - New window opens as expected.
 Expected - Link "Trip Advisor" to open Tripadvisor.co.uk page for Nilaveli in a new window.  
 Testing - Clicked "Trip Advisor"  
 Result - New window opens as expected.  
+
+Expected - When mouse hovering over drop down menus, the lists of locations are shown.  
+Testing - Mouse hovering over drop down menus.  
+Result - The drop down menus lists are shown as expected.  
+
+Expected - Link in navbar to open Home page.  
+Testing - Clicked on "Home".  
+Result - Home link in navbar opens Home page as expected.  
+
+Expected - Links in navbar to open Mirissa page.    
+Testing - Clicking on "Mirissa".    
+Result - Mirissa link in navbar opens Mirissa page as expected.  
+
+
+Expected - Links in navbar to open Anuradhapura page.    
+Testing - Clicking on "Anuradhapura" .    
+Result - Anuradhapura link in navbar opens Anuradhapura page as expected.
+
+Expected - Links in navbar to open Polonnaruwa page.    
+Testing - Clicking on "Polonnaruwa".    
+Result - Polonnaruwa link in navbar opens Polonnaruwa page as expected.
+
+Expected - Links in navbar to open Ella page.    
+Testing - Clicking on "Ella".      
+Result - Ella link in navbar opens Ella page as expected.
+
+Expected - Link in navbar to open Gallery page.  
+Testing - Clicked on "Gallery".    
+Result - Gallery link in navbar opens Gallery page as expected.  
+
+Expected - Link in navbar to open Contact page.  
+Testing - Clicked on "Contact".    
+Result - Contact link in navbar opens Contact page as expected.
 
 #### **_Anuradhapura page_**
 
@@ -140,6 +316,40 @@ Expected - Link "Trip Advisor" to open Tripadvisor.co.uk page for Anuradhapura i
 Testing - Clicked "Trip Advisor"  
 Result - New window opens as expected.  
 
+Expected - When mouse hovering over drop down menus, the lists of locations are shown.  
+Testing - Mouse hovering over drop down menus.  
+Result - The drop down menus lists are shown as expected.  
+
+Expected - Link in navbar to open Home page.  
+Testing - Clicked on "Home".  
+Result - Home link in navbar opens Home page as expected.  
+
+Expected - Links in navbar to open Mirissa page.    
+Testing - Clicking on "Mirissa".    
+Result - Mirissa link in navbar opens Mirissa page as expected.  
+
+
+Expected - Links in navbar to open Anuradhapura page.    
+Testing - Clicking on "Anuradhapura" .    
+Result - Anuradhapura link in navbar opens Anuradhapura page as expected.
+
+Expected - Links in navbar to open Polonnaruwa page.    
+Testing - Clicking on "Polonnaruwa".    
+Result - Polonnaruwa link in navbar opens Polonnaruwa page as expected.
+
+Expected - Links in navbar to open Ella page.    
+Testing - Clicking on "Ella".      
+Result - Ella link in navbar opens Ella page as expected.
+
+Expected - Link in navbar to open Gallery page.  
+Testing - Clicked on "Gallery".    
+Result - Gallery link in navbar opens Gallery page as expected.  
+
+Expected - Link in navbar to open Contact page.  
+Testing - Clicked on "Contact".    
+Result - Contact link in navbar opens Contact page as expected.
+
+
 #### **_Polonnaruwa page_**
 
 Expected - Link "Booking.com" to open Booking.com page for Polonnaruwa in a new window.  
@@ -153,6 +363,39 @@ Result - New window opens as expected.
 Expected - Link "Trip Advisor" to open Tripadvisor.co.uk page for Polonnaruwa in a new window.  
 Testing - Clicked "Trip Advisor"  
 Result - New window opens as expected.  
+
+Expected - When mouse hovering over drop down menus, the lists of locations are shown.  
+Testing - Mouse hovering over drop down menus.  
+Result - The drop down menus lists are shown as expected.  
+
+Expected - Link in navbar to open Home page.  
+Testing - Clicked on "Home".  
+Result - Home link in navbar opens Home page as expected.  
+
+Expected - Links in navbar to open Mirissa page.    
+Testing - Clicking on "Mirissa".    
+Result - Mirissa link in navbar opens Mirissa page as expected.  
+
+Expected - Links in navbar to open Nilaveli page.    
+Testing - Clicking on "Nilaveli".    
+Result - Nilaveli link in navbar opens Nilaveli page as expected.  
+
+Expected - Links in navbar to open Anuradhapura page.    
+Testing - Clicking on "Anuradhapura" .    
+Result - Anuradhapura link in navbar opens Anuradhapura page as expected.
+
+Expected - Links in navbar to open Ella page.    
+Testing - Clicking on "Ella".      
+Result - Ella link in navbar opens Ella page as expected.
+
+Expected - Link in navbar to open Gallery page.  
+Testing - Clicked on "Gallery".    
+Result - Gallery link in navbar opens Gallery page as expected.  
+
+Expected - Link in navbar to open Contact page.  
+Testing - Clicked on "Contact".    
+Result - Contact link in navbar opens Contact page as expected.
+
 
 #### **_Ella page_**
 
@@ -168,6 +411,40 @@ Expected - Link "Trip Advisor" to open Tripadvisor.co.uk page for Ella in a new 
 Testing - Clicked "Trip Advisor"  
 Result - New window opens as expected.  
 
+Expected - When mouse hovering over drop down menus, the lists of locations are shown.  
+Testing - Mouse hovering over drop down menus.  
+Result - The drop down menus lists are shown as expected.  
+
+Expected - Link in navbar to open Home page.  
+Testing - Clicked on "Home".  
+Result - Home link in navbar opens Home page as expected.  
+
+Expected - Links in navbar to open Mirissa page.    
+Testing - Clicking on "Mirissa".    
+Result - Mirissa link in navbar opens Mirissa page as expected.  
+
+Expected - Links in navbar to open Nilaveli page.    
+Testing - Clicking on "Nilaveli".    
+Result - Nilaveli link in navbar opens Nilaveli page as expected.  
+
+Expected - Links in navbar to open Anuradhapura page.    
+Testing - Clicking on "Anuradhapura" .    
+Result - Anuradhapura link in navbar opens Anuradhapura page as expected.
+
+Expected - Links in navbar to open Polonnaruwa page.    
+Testing - Clicking on "Polonnaruwa".    
+Result - Polonnaruwa link in navbar opens Polonnaruwa page as expected.
+
+
+Expected - Link in navbar to open Gallery page.  
+Testing - Clicked on "Gallery".    
+Result - Gallery link in navbar opens Gallery page as expected.  
+
+Expected - Link in navbar to open Contact page.  
+Testing - Clicked on "Contact".    
+Result - Contact link in navbar opens Contact page as expected.
+
+
 #### **_Gallery page_**
 
 Expected - "Next >" white arrow to show next picture.  
@@ -177,6 +454,39 @@ Result - Next picture shown as expected.
 Expected - "Previous <" white arrow to go back to previous picture.  
 Testing - Clicked "Previous <".  
 Result - Previous picture shown as expected.  
+
+Expected - When mouse hovering over drop down menus, the lists of locations are shown.  
+Testing - Mouse hovering over drop down menus.  
+Result - The drop down menus lists are shown as expected.  
+
+Expected - Link in navbar to open Home page.  
+Testing - Clicked on "Home".  
+Result - Home link in navbar opens Home page as expected.  
+
+Expected - Links in navbar to open Mirissa page.    
+Testing - Clicking on "Mirissa".    
+Result - Mirissa link in navbar opens Mirissa page as expected.  
+
+Expected - Links in navbar to open Nilaveli page.    
+Testing - Clicking on "Nilaveli".    
+Result - Nilaveli link in navbar opens Nilaveli page as expected.  
+
+Expected - Links in navbar to open Anuradhapura page.    
+Testing - Clicking on "Anuradhapura" .    
+Result - Anuradhapura link in navbar opens Anuradhapura page as expected.
+
+Expected - Links in navbar to open Polonnaruwa page.    
+Testing - Clicking on "Polonnaruwa".    
+Result - Polonnaruwa link in navbar opens Polonnaruwa page as expected.
+
+Expected - Links in navbar to open Ella page.    
+Testing - Clicking on "Ella".      
+Result - Ella link in navbar opens Ella page as expected.
+
+Expected - Link in navbar to open Contact page.  
+Testing - Clicked on "Contact".    
+Result - Contact link in navbar opens Contact page as expected.
+
 
 
 #### **_Contact us page_**
@@ -211,3 +521,94 @@ Expected - To receive an email to developer email account when users fill in the
 Testing - Form filled in correctly.  
 Result - Message alert appear "Thank you your message was sent". Email received to developer account with the same informations written inside form sections.  
 
+Expected - When mouse hovering over drop down menus, the lists of locations are shown.  
+Testing - Mouse hovering over drop down menus.  
+Result - The drop down menus lists are shown as expected.  
+
+Expected - Link in navbar to open Home page.  
+Testing - Clicked on "Home".  
+Result - Home link in navbar opens Home page as expected.  
+
+Expected - Links in navbar to open Mirissa page.    
+Testing - Clicking on "Mirissa".    
+Result - Mirissa link in navbar opens Mirissa page as expected.  
+
+Expected - Links in navbar to open Nilaveli page.    
+Testing - Clicking on "Nilaveli".    
+Result - Nilaveli link in navbar opens Nilaveli page as expected.  
+
+Expected - Links in navbar to open Anuradhapura page.    
+Testing - Clicking on "Anuradhapura" .    
+Result - Anuradhapura link in navbar opens Anuradhapura page as expected.
+
+Expected - Links in navbar to open Polonnaruwa page.    
+Testing - Clicking on "Polonnaruwa".    
+Result - Polonnaruwa link in navbar opens Polonnaruwa page as expected.
+
+Expected - Links in navbar to open Ella page.    
+Testing - Clicking on "Ella".      
+Result - Ella link in navbar opens Ella page as expected.
+
+Expected - Link in navbar to open Gallery page.  
+Testing - Clicked on "Gallery".    
+Result - Gallery link in navbar opens Gallery page as expected.  
+
+
+
+### **_User Story testing_**  
+
+
+Expected - As a tourist I want to be able to discover where is the geographical location of Sri Lanka and where the locations stated in the website are located.  
+Testing - Opening https://mattyimry.github.io/Discover-Sri-Lanka_MS2/  
+Result - Google Map loads correctly with custom markers, correct location (Sri Lanka).   
+
+
+Expected - As a tourist I want to be able to gather more information about Sri Lanka locations present in the map by using the links in the navbar.  
+Testing - Opening links inside navbar.    
+Result - The links open location's pages.   
+
+Expected - As a tourist I want to be able to, by using the search box in the map, to search for facilities, places to visit, find addresses.  
+Testing - Entered "Hotel" in search box.  
+Result - Google Map return markers on map for hotels with info window with related icon and address.    
+Testing - Entered "Restaurant" in search box.   
+Result - Google Map return markers on map for restaurant with info window with related icon and address.    
+Testing - A different number of facilities and places has been searched for.
+Result - All searches have returned the informations correctly.  
+
+Expected - As a tourist I want to be able to use a contact form in case more information are needed.
+Testing - Form filled in correctly.  
+Result - Message alert appear "Thank you your message was sent". Email received to developer account with the same informations written inside form sections.  
+
+
+Expected - As a local resident I want to be able to find more informations about locations in Sri Lanka via links in the navbar.  
+Testing - Opening links inside navbar. 
+Result - The links open location's pages. 
+
+
+Expected - As a local resident I want to be able to, by using the search box in the map, search for  facilities and places to visit, find addresses.  
+Testing - Entered "Hotel" in search box.  
+Result - Google Map return markers on map for hotels with info window with related icon and address.    
+Testing - Entered "Restaurant" in search box.   
+Result - Google Map return markers on map for restaurant with info window with related icon and address.    
+Testing - A different number of facilities and places has been searched for.
+Result - All searches have returned the informations correctly.  
+
+### **_Strategy /Site owner testing_**  
+
+
+Expected - I have designed this website to help the User explore different Sri Lankan locations.  
+Testing - Click links in navbar.  
+Result - Links in navbar open pages for Sri Lanka's locations.  
+
+
+Expected - The User can view the locations on Google maps, use a search box in Google maps to search for facilities and other locations within the island.  
+Testing - Load Home page or load https://mattyimry.github.io/Discover-Sri-Lanka_MS2/  
+Result - The maps loads correctly. Search box fully functional. All searches returns correct information and markers on map.    
+
+Expected - Use external links to check blogs and to be able to book accomodations.  
+Testing - Click on links at bottom of location's pages.  
+Result - All links redirect the user to external link.  
+
+Expected - The User can use the contact form in the contact page to request more information of Sri Lanka.
+Testing - Filled conatc form correctly.  
+Result - Teh developer receives an email with the same information entered in the form.  

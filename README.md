@@ -1,6 +1,6 @@
 Interactive Front End Development Project Milestone 2 - Code Institute
 
-![Screenshotproject]
+![Screenshotproject](assets/media/ms2_screenshot.JPG)
 
 # **_Sri Lanka Pearl of Asia_**
 
@@ -9,7 +9,7 @@ The deployed project can be found here https://mattyimry.github.io/Discover-Sri-
 
 ## **_UX_**
 
-### **_Strategy_**
+### **_Strategy / Site Owner story_**
 
  I have designed this website to help the User explore different Sri Lankan locations. The User can view the locations on Google maps, use a search box in Google maps to search for facilities and other locations within the island. Use external links to check blogs and to be able to book accomodations. Also the User can use the contact form in the contact page to request more information of Sri Lanka.
 
@@ -56,13 +56,14 @@ The backgrond color for the text area is #e3edf1. The color #e3edf1 has also bee
 ### **_User Story_**
 
 * As a tourist I want to be able to discover where is the geographical location of Sri Lanka and where the locations stated in the website are located.
-* As a tourist I want to be able to gather more information about Sri Lanka by using links to external pages. 
-* As a tourist I want to be able to , by using the search box in the map, search for  facilities and places to visit, find addresses. 
+* As a tourist I want to be able to gather more information about Sri Lanka locations present in the map by using the links in the navbar.   
+* As a tourist I want to be able to, by using the search box in the map, to search for facilities, places to visit, find addresses.  
 * As a tourist I want to be able to use a contact form in case more information are needed.
 * As a tourist I want to be able, in the future, to come back and check for new locations added to the website.
-* As a local resident I want to be able to find more information about other locations in Sri Lanka via links to external pages and with the use of the interactive map. 
-* As a local resident I want to be able, in the future,to come back to the web site to see if new locationS and informationS have been added to the website.
-* As a local resident I want to be able to , by using the search box in the map, search for  facilities and places to visit, find addresses. 
+* As a local resident I want to be able to find more informations about locations in Sri Lanka via links in the navbar.
+* As a local resident I want to be able to, by using the search box in the map, search for  facilities and places to visit, find addresses. 
+* As a local resident I want to be able, in the future,to come back to the web site to see if new locations and informations have been added to the website.
+
 
 
 ### **_Wireframe_**
