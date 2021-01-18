@@ -2,7 +2,7 @@
 
 ### **_Automated testing_**
 
-* html pages tested with [W3C HTML Validator](https://validator.w3.org/#validate_by_input).  
+* HTML pages tested with [W3C HTML Validator](https://validator.w3.org/#validate_by_input).  
 All pages had an error. After the copyright code `&#169` missing semicolon.  Added semicolon no issue.  
 Gallery page had an error. After the arrows for changing picture code `&#10094` and `&#10095` missing semicolon. Added semicolon no issue.  
 * CSS file has been tested with [W3C CSS validator](https://jigsaw.w3.org/css-validator/). No errors.
@@ -11,108 +11,64 @@ Gallery page had an error. After the arrows for changing picture code `&#10094` 
 
     The followings warning has been shown for email.js file:  
 
-    One warning
-    line 10	'template literal syntax' is only available in ES6 (use 'esversion: 6').  
-    One undefined variable: line 4 emailjs  
-    One unused variable: line 3	sendMail
+    One undefined variable  
+7	emailjs  
+One unused variable  
+6	sendMail  
 
 
     The followings warning has been shown for gallery.js file: 
 
-    line 4	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).  
-    line 15	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).  
-    line 16	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).  
-    line 18	Missing semicolon.  If I add semicolon teels me to remove it.  
-    line 19	Missing semicolon.  If I add semicolon teels me to remove it.  
     One unused variable  
-    line 9	plusSlide. This is a name of a function .Cannot remove.
-
-    The followings warning has been shown for menuover.js file:  
-    
-    One undefined variable  
-    line 3	$  I cannot change short hand for Jquery  
-    line 4	$  I cannot change short hand for Jquery
-    line 5	$  I cannot change short hand for Jquery  
+12	plusSlide  
 
 
     The followings warning has been shown for map.js file: 
 
-    25 warnings
-line 5	'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).  
-line 13	'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).  
-line 14	'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).  
-line 14	'template literal syntax' is only available in ES6 (use 'esversion: 6').  
-line 15	'template literal syntax' is only available in ES6 (use 'esversion: 6').  
-line 16	'template literal syntax' is only available in ES6 (use 'esversion: 6').  
-line 17	'template literal syntax' is only available in ES6 (use 'esversion: 6').  
-line 18	'template literal syntax' is only available in ES6 (use 'esversion: 6').  
-line 24	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).  
-line 24	'template literal syntax' is only available in ES6 (use 'esversion: 6').    
-line 24	'template literal syntax' is only available in ES6 (use 'esversion: 6').  
-line 24	'template literal syntax' is only available in ES6 (use 'esversion: 6').  
-line 24	'template literal syntax' is only available in ES6 (use 'esversion: 6').   
-line 26	'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).  
-line 35	'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).  
-line 42	Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (closeOtherInfo, infoObj)  
-line 67	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).  
-line 68	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).  
-line 71	'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6').  
-line 79	'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6').  
-line 80	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).  
-line 85	'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6').  
-line 91	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).  
-line 93	'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6').  
-line 101	'object short notation' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz). 
-
-
-    Five undefined variables.  All the followings are not undefined variables.   
-
-
-    line 6	google  
-    line 13	google  
-    line 26	google  
-    line 28	google  
-    line 32	google  
-    line 35	google  
-    line 61	google  
-    line 62	google  
-    line 68	google  
-    line 69	google  
-    line 91	google  
-    line 100	google  
-    line 109	google  
-    line 127	google  
-    line 23	i  
-    line 23	i  
-    line 23	i  
-    line 24	i  
-    line 24	i  
-    line 28	i  
-    line 28	i  
-    line 30	i  
-    line 31	i  
-    line 54	infoWindow  
-    line 62	infoWindow  
-    line 130	infoWindow  
-    line 61	places  
-    line 125	places  
-    line 145	$  
-    One unused variable  
-line 3	initMap . It not a variable but name of function
- 
+    One warning  
+44	Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (closeOtherInfo, infoObj)  
+Four undefined variables  
+8	google  
+15	google  
+28	google  
+30	google  
+34	google  
+37	google  
+65	google  
+66	google  
+72	google  
+73	google  
+95	google  
+104	google  
+113	google  
+135	google  
+25	i  
+25	i  
+25	i  
+26	i  
+26	i  
+30	i  
+30	i  
+32	i  
+33	i  
+58	infoWindow  
+66	infoWindow  
+138	infoWindow  
+65	places  
+133	places  
+One unused variable  
+5	initMap  
 
 
 
 
 * [LightHouse Google](https://developers.google.com/web/tools/lighthouse#devtools).  
-I have tested the mobile and desktop verions of my web site with Google Lighthouse.
+I have tested the mobile and desktop versions of my project with Google Lighthouse.
 Please refer to screen shots.  
 
     [mobile](assets/media/lighthouse_mobile.JPG) Screenshot
 
-    I have notice a slow performance for the mobile view. I will learn more about Lighthouse as it's a very powerfull tool. So in the future i can make my website more efficients.
-
-
+    I have noticed a slow performance for the mobile view. After investigating the issue I have noticed that for around 700ms there is no response and the page stays blank. On Lighthouse when looking at the performance tab you can see that the timeline referred to the blank frames, mentions "https://mattyimry.github.io/Discover-Sri-Lanka_MS2/". I do think that the performance issue comes from the loading time from "Github".
     [desktop](assets/media/lighthouse_desktop.JPG) Screenshot
 
 
@@ -126,11 +82,11 @@ Expected - Google Map to load correctly when user loads page https://mattyimry.g
 Testing - Opening https://mattyimry.github.io/Discover-Sri-Lanka_MS2/  
 Result - Google Map loads correctly with custom markers, correct location (Sri Lanka), correct zoom and controls. All Google map controls on the map are working as expected.    
 
-Expected - Google Map search box to return item that Users searched for.  
+Expected - Google Map search box to return items that Users searched for.  
 Testing - Entered "Hotel" in search box.  
 Result - Google Map return markers on map for hotels.  
 Testing - Entered "Restaurant" in search box.   
-Result - Google Map return markers on map for restaurant.  
+Result - Google Map return markers on map for restaurants.  
 
 Expected - User search facilities in search box. Clicking on Google searched marker. An info window opens with information for the facility searched, clickable links and icon.   
 Testing - Clicked searched marker, info window opens with correct facility's information and clickable link.   
@@ -163,7 +119,7 @@ Testing - Clickable link opens the Ella page. Same page available in drop down m
 Result - Info window and clickable link working as expected.
    
 Expected - Reset button reset map returning to its default zoom state.  
-Testing - Zoomed in on map, clicked button.  
+Testing - Zoomed in on map, clicked reset button.  
 Result - Reset button works as expected maps back to initial zoom state.  
 
 
@@ -329,10 +285,6 @@ Testing - Clicking on "Mirissa".
 Result - Mirissa link in navbar opens Mirissa page as expected.  
 
 
-Expected - Links in navbar to open Anuradhapura page.    
-Testing - Clicking on "Anuradhapura" .    
-Result - Anuradhapura link in navbar opens Anuradhapura page as expected.
-
 Expected - Links in navbar to open Polonnaruwa page.    
 Testing - Clicking on "Polonnaruwa".    
 Result - Polonnaruwa link in navbar opens Polonnaruwa page as expected.
@@ -491,35 +443,35 @@ Result - Contact link in navbar opens Contact page as expected.
 
 #### **_Contact us page_**
 
-Expected - User do not fill "Name" section  
+Expected - User do not fill "Name" section.  
 Testing - "Name" section not filled in.    
-Result - Error appear on "Name" section saying "Please fill in this field".  
+Result - Error appears on "Name" section saying "Please fill in this field".  
 
 Expected - User do not fill "E-mail" section.  
 Testing - "E-mail" section not filled in.  
-Result - Error appear on "Email" section saying "Please include an "@" in the email address".  
+Result - Error appears on "Email" section saying "Please include an "@" in the email address".  
 
 
 Expected - User do not fill "Subject" section.  
 Testing - "Subject" section not filled in.  
-Result - Error appear on "Subject" section saying "Please fill in this field".  
+Result - Error appearss on "Subject" section saying "Please fill in this field".  
 
 Expected - User do not fill "Message" section.  
 Testing - "Message" section not filled in.  
-Result - Error appear on "Subject" section saying "Please fill in this field". 
+Result - Error appears on "Subject" section saying "Please fill in this field". 
 
 Expected - User click on "Submit" button after filling the form correctly.  
 Testing - Filling form correctly and click "Submit".  
-Result - Message alert appear "Thank you your message was sent".  
+Result - Message alert appears "Thank you your message was sent".  
 
 Expected - User completes the form correctly.  
 Testing - Form filled in correctly.  
-Result - Message alert appear "Thank you your message was sent"  
+Result - Message alert appears "Thank you your message was sent"  
 
 
 Expected - To receive an email to developer email account when users fill in the form correctly. EmailJs functionality    
 Testing - Form filled in correctly.  
-Result - Message alert appear "Thank you your message was sent". Email received to developer account with the same informations written inside form sections.  
+Result - Message alert appears "Thank you your message was sent". Email received to developer account with the same information written inside form sections.  
 
 Expected - When mouse hovering over drop down menus, the lists of locations are shown.  
 Testing - Mouse hovering over drop down menus.  
@@ -579,6 +531,10 @@ Expected - As a tourist I want to be able to use a contact form in case more inf
 Testing - Form filled in correctly.  
 Result - Message alert appear "Thank you your message was sent". Email received to developer account with the same informations written inside form sections.  
 
+Expected - As a tourist I want to be able to view pictures of Sri Lanka.  
+Testing - Click gallery page and click next/previous white arrow.  
+Result - Pictures are changing as expected.  
+
 
 Expected - As a local resident I want to be able to find more informations about locations in Sri Lanka via links in the navbar.  
 Testing - Opening links inside navbar. 
@@ -593,6 +549,11 @@ Result - Google Map return markers on map for restaurant with info window with r
 Testing - A different number of facilities and places has been searched for.
 Result - All searches have returned the informations correctly.  
 
+Expected - As a local resident I want to be able to view pictures of Sri Lanka.  
+Testing - Click gallery page and click next/previous white arrow.  
+Result - Pictures are changing as expected.  
+
+
 ### **_Strategy /Site owner testing_**  
 
 
@@ -601,14 +562,43 @@ Testing - Click links in navbar.
 Result - Links in navbar open pages for Sri Lanka's locations.  
 
 
-Expected - The User can view the locations on Google maps, use a search box in Google maps to search for facilities and other locations within the island.  
+Expected - The User can view the locations on Google maps, use a search box in Google maps to search for facilities and other locations within the island or the world.  
 Testing - Load Home page or load https://mattyimry.github.io/Discover-Sri-Lanka_MS2/  
 Result - The maps loads correctly. Search box fully functional. All searches returns correct information and markers on map.    
 
-Expected - Use external links to check blogs and to be able to book accomodations.  
+Expected - Use external links to check blogs and to be able to book accomodation.  
 Testing - Click on links at bottom of location's pages.  
 Result - All links redirect the user to external link.  
 
-Expected - The User can use the contact form in the contact page to request more information of Sri Lanka.
-Testing - Filled conatc form correctly.  
-Result - Teh developer receives an email with the same information entered in the form.  
+Expected - The User can use the contact form in the contact page to request more information about Sri Lanka.  
+Testing - Filled contact form correctly.  
+Result - The developer receives an email with the same information entered in the form.  
+
+Expected - The  local resident/tourist can view pictures of Sri Lanka.  
+Testing - Click gallery page and click next/previous white arrow.  
+Result - Pictures are changing as expected.  
+
+### **_Browser compatibility_**
+  
+The project ahd been tested in the following browsers without any compatibility issue:  
+* Google Chrome    
+* Microsoft Edge  
+* Firefox  
+* Opera  
+
+The project has also been tested on different screen sizes. 15" and 14" inch laptop, 24" screen and 20" screen.
+
+
+Please refer to this link [screenshot desktop](/workspace/Discover-Sri-Lanka_MS2/assets/media/desktop_view_screenshots.pdf) to view the screenshots of the project in desktop view.
+
+
+### **_Responsiveness_**
+
+As already specified in the "Surface" part in README file, the project has been developed with mobile first approach.
+Please refer to this link [screenshot mobile](/workspace/Discover-Sri-Lanka_MS2/assets/media/mobile_view_screenshots.pdf) to view the screenshots of the project in mobile view.
+
+The project has been tested in mobile view in the following devices without any compatibility issue: 
+
+* Motorola G5, G8 and G9
+* Iphone 6
+* Ipad 2

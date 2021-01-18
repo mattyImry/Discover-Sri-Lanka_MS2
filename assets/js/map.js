@@ -1,5 +1,7 @@
 // CODE WAS WRITTEN BY FOLLOWING COURSE MATERIAL, GOOGLE DOCUMENTATION AND DOCUMENTS WRITTEN BY EAMMON SMYTH.
-
+/**
+ * Initialise map.
+ */
 function initMap() {
     
     const mapValues = {
@@ -8,17 +10,17 @@ function initMap() {
         zoomControl: true,
     };
 
-// CREATING THE MAP INSIDE THE DIV WITH ID="MAP", ADDING MARKER TO MAPS WITH NAMES AND INFO 
+// CREATING THE MAP INSIDE THE DIV WITH ID="MAP", ADDING MARKER TO MAPS WITH NAMES AND INFOs 
 
     const map = new google.maps.Map(document.getElementById("map"), mapValues);
-    const myMarks = [{"lat": 5.9448, "lng": 80.4586, "name": "Mirissa", "logo":"assets/images/beach_icon.png", "information":`Breath the sea side                                              vibe, lay on white sandy beaches, <a href="mirissa.html">more info</a>.`},
+    const myMarks = [{"lat": 5.9448, "lng": 80.4586, "name": "Mirissa", "logo":"assets/images/beach_icon.png",                             "information":`Breath the seaside vibe, lay on white sandy beaches, <a href="mirissa.html">more                       info</a>.`},
                     {"lat": 8.6941, "lng": 81.1894, "name": "Nilaveli","logo":"assets/images/beach_icon.png", "information":`Relax to the view of an infinite beach outlined by coconat trees, <a href="nilaveli.html">more info</a>.`},
                     {"lat": 7.9384, "lng": 81.0049, "name": "Polonnaruwa","logo":"assets/images/temple_icon.png", "information":`Explore the outstanding remains of the royal ancient city of the Kingdom of Polonnaruwa <a href="polonnaruwa.html">more info</a>.`},                                                                   
                     {"lat": 8.3444, "lng": 80.3986, "name": "Anuradhapura","logo":"assets/images/temple_icon.png", "information":`One of the ancient capitals of Sri Lanka,visit the stunning ruins of the Sinhala civilization <a href="anuradhapura.html">more info</a>.`},
                     {"lat": 6.87100, "lng":81.0489, "name": "Ella","logo":"assets/images/peak_icon.png", "information":`Come and taste the original Cylon tea, visit tea plantations and beautiful green hills <a href="ella.html">more info</a>.`}
     ];
 
-    var infoObj = [];
+    let infoObj = null;
 
     for(i = 0; i < myMarks.length; i++){
         let contentString = `<h4>` + myMarks[i].name + `</h4>` + `<p>` + myMarks[i].information + `</p>`;
@@ -42,15 +44,17 @@ function initMap() {
         markerPosition.addListener("click", function() {
             closeOtherInfo();
             infowindow.open(map, markerPosition);
-            infoObj[0] = infowindow;
+            infoObj = infowindow;
         });
     }
-
+    /**
+     * Closing other info
+     */
     function closeOtherInfo() {
-        if(infoObj.length > 0){
-            infoObj[0].set("markerPosition", null);
-            infoObj[0].close();
-            infoObj[0].length = 0;
+        if(infoObj !== null){
+            infoObj.set("markerPosition", null);
+            infoObj.close();
+            infoObj = null;
             infoWindow.close();
         }
     }
@@ -60,7 +64,7 @@ function initMap() {
 
     places = new google.maps.places.PlacesService(map);
     infoWindow = new google.maps.InfoWindow({
-      content: document.getElementById('info-content')
+        content: document.getElementById('info-content')
     });
  
 
@@ -74,7 +78,7 @@ function initMap() {
     
 // ADDING LISTENER WHEN THE USER SELECT RESULT FROM SEARCHBOX 
 
-    var markers = [];
+    let markers = [];
 
     searchBox.addListener("places_changed", () =>{
         let places = searchBox.getPlaces();
@@ -89,7 +93,7 @@ function initMap() {
         markers = [];
 
     let bounds = new google.maps.LatLngBounds();
-    var count = 0;
+    let count = 0;
     places.forEach((place) => {
         if (!place.geometry) {
             return;
@@ -120,19 +124,29 @@ function initMap() {
     map.fitBounds(bounds);
     });
 // ADDING INFO WINDOWS TO SEARCHED PLACE/MARKERS
+
+    /**
+     * Create Infowindow for searched items
+     */
     function showInfoWindow() {
-            var marker = this;
+            let marker = this;
             places.getDetails({placeId: marker.placeResult.place_id},
                 function(place, status) {
-                if (status !== google.maps.places.PlacesServiceStatus.OK) {
-                    return;
+                    if (status !== google.maps.places.PlacesServiceStatus.OK) {
+                        return;
                 }
                 infoWindow.open(map, marker);
                 buildIWContent(place);
-                infoObj[0].close();
+                if(infoObj !== null){
+                    infoObj.close();
+                    infoObj = null;
+                }
             });
     }
-
+/**
+ * Open infowindow
+ * @param {object} place 
+ */
     function buildIWContent(place) {
             document.getElementById('iw-icon').innerHTML = '<img class="hotelIcon" ' +
                 'src="' + place.icon + '"/>';
@@ -141,7 +155,7 @@ function initMap() {
             document.getElementById('iw-address').textContent = place.vicinity;     
     }
 
-// RESET MAP ZOOM
+// RESET MAP ZOOM CHECK README FILE FOR CREDIT ON
     $('#reset').click(function(){
         map.setCenter({lat:7.7156, lng:80.6919});
         map.setZoom(6.5);
