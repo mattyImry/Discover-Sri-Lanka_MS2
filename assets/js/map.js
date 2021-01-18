@@ -155,7 +155,7 @@ function initMap() {
             document.getElementById('iw-address').textContent = place.vicinity;     
     }
 
-// RESET MAP ZOOM CHECK README FILE FOR CREDIT ON
+// RESET MAP ZOOM CHECK README FILE FOR CREDIT 
     $('#reset').click(function(){
         map.setCenter({lat:7.7156, lng:80.6919});
         map.setZoom(6.5);

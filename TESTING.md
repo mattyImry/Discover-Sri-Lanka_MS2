@@ -66,10 +66,10 @@ One unused variable
 I have tested the mobile and desktop versions of my project with Google Lighthouse.
 Please refer to screen shots.  
 
-    [mobile](assets/media/lighthouse_mobile.JPG) Screenshot
+    [mobile](https://github.com/mattyImry/Discover-Sri-Lanka_MS2/blob/d4fc7f3982371bb16cb2bbe86e2260c7f2fa378b/assets/media/lighthouse_mobile.jpg) Screenshot
 
     I have noticed a slow performance for the mobile view. After investigating the issue I have noticed that for around 700ms there is no response and the page stays blank. On Lighthouse when looking at the performance tab you can see that the timeline referred to the blank frames, mentions "https://mattyimry.github.io/Discover-Sri-Lanka_MS2/". I do think that the performance issue comes from the loading time from "Github".
-    [desktop](assets/media/lighthouse_desktop.JPG) Screenshot
+    [desktop](https://github.com/mattyImry/Discover-Sri-Lanka_MS2/blob/d4fc7f3982371bb16cb2bbe86e2260c7f2fa378b/assets/media/desktop_view_screenshots.pdf) Screenshot.
 
 
 
@@ -589,13 +589,13 @@ The project ahd been tested in the following browsers without any compatibility 
 The project has also been tested on different screen sizes. 15" and 14" inch laptop, 24" screen and 20" screen.
 
 
-Please refer to this link [screenshot desktop](/workspace/Discover-Sri-Lanka_MS2/assets/media/desktop_view_screenshots.pdf) to view the screenshots of the project in desktop view.
+Please refer to this link [screenshot desktop](https://github.com/mattyImry/Discover-Sri-Lanka_MS2/blob/d4fc7f3982371bb16cb2bbe86e2260c7f2fa378b/assets/media/desktop_view_screenshots.pdf) to view the screenshots of the project in desktop view.
 
 
 ### **_Responsiveness_**
 
 As already specified in the "Surface" part in README file, the project has been developed with mobile first approach.
-Please refer to this link [screenshot mobile](/workspace/Discover-Sri-Lanka_MS2/assets/media/mobile_view_screenshots.pdf) to view the screenshots of the project in mobile view.
+Please refer to this link [screenshot mobile](https://github.com/mattyImry/Discover-Sri-Lanka_MS2/blob/d4fc7f3982371bb16cb2bbe86e2260c7f2fa378b/assets/media/mobile_view_screenshots.pdf) to view the screenshots of the project in mobile view.
 
 The project has been tested in mobile view in the following devices without any compatibility issue: 
 

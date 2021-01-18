@@ -1,6 +1,6 @@
 Interactive Front End Development Project Milestone 2 - Code Institute
 
-![Screenshotproject](assets/media/ms2_screenshot.JPG)
+![Screenshotproject](https://github.com/mattyImry/Discover-Sri-Lanka_MS2/blob/d4fc7f3982371bb16cb2bbe86e2260c7f2fa378b/assets/media/ms2_screenshot.jpg)
 
 # **_Discover Sri Lanka_**
 
@@ -182,7 +182,7 @@ To clone the repository for collaboration  using the command line following thes
 
 ## **_Credits_**
 
-* The code for Google Maps API has been written with the support of the documents written by Eamonn Smyth [pdf here](https://github.com/mattyImry/Discover-Sri-Lanka_MS2/blob/master/assets/media/how_to_google_map.pdf), [Google documentation](https://developers.google.com/maps/documentation/javascript/tutorials), [Youtube tutorial](https://www.youtube.com/watch?v=Xptz0GQ2DO4) by [Pradip Debnath](https://www.youtube.com/channel/UC43N9Z8Fm0gg1Lgpw0eS9rg).
+* The code for Google Maps API has been written with the support of the documents written by Eamonn Smyth [pdf here](https://github.com/mattyImry/Discover-Sri-Lanka_MS2/blob/d4fc7f3982371bb16cb2bbe86e2260c7f2fa378b/assets/media/how_to_goggle_map.pdf), [Google documentation](https://developers.google.com/maps/documentation/javascript/tutorials), [Youtube tutorial](https://www.youtube.com/watch?v=Xptz0GQ2DO4) by [Pradip Debnath](https://www.youtube.com/channel/UC43N9Z8Fm0gg1Lgpw0eS9rg).
 
 * The code for Google map API search box functionality has been written with the support of the [Google documentation](https://developers.google.com/maps/documentation/javascript/examples/places-searchbox#maps_places_searchbox-javascript).
 
