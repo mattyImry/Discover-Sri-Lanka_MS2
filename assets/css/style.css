@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Raleway:wght@300;400;500;600;700&display=swap');
+
+
 /*------------INDEX.html-------------*/
 
 body, html {
@@ -82,7 +84,6 @@ a.nav-link{
     font-weight:500;
     margin-top: 10px;
     color:#fafafa;
-
 }
 
 /*---------------MAP----------------*/
@@ -116,7 +117,6 @@ input#search-box-map.pac-target-input{
 
 input[type="text"]{
     font-size: 18px;
-    
 }
 
 .gm-style .gm-style-iw{
