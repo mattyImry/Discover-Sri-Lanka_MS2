@@ -206,10 +206,10 @@ input[type="text"]{
         margin-left: 0!important;
         background-color: rgba(0, 0, 0, 0.3);
     }
+ 
 }
 
-
-    
+   
 /*------------CONTACTUS.html-------------*/
 
 .contact{
@@ -366,12 +366,12 @@ form .form-control::placeholder{
 
 .description{
     position: absolute;
-    bottom: 50px;
-    left: 40px;
-    color:#fafafa;
+    
+    color:black;
     font-family: Raleway, sans-serif;
     font-weight: 600;
     font-size: 40px;
+    transform: translate(-50%, -50%);
 }
 
 .navbar-toggler-gallery{
@@ -386,3 +386,18 @@ form .form-control::placeholder{
     position: absolute;
 }
 
+/* thumbnail Six columns side by side */
+.thumbnail {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
