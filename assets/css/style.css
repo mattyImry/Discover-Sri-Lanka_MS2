@@ -204,7 +204,7 @@ input[type="text"]{
         display: initial!important;
         
     }  
-    
+
     .title-polonna{
         color: #fafafa;
         margin-left: 0!important;
@@ -326,6 +326,13 @@ form .form-control::placeholder{
 
 /*------------GALLERY.HTML-------------*/
 
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 25px solid rgba(0,0,0,.8);
+    margin: 0;
+}
 .nav-gallery{
     left: 0;
     right: 0;
@@ -342,13 +349,22 @@ form .form-control::placeholder{
 .slidePic{
     display: none;
     padding: 0px;
+   
 }
+
+.image-slide {
+    max-width: 100%;
+    max-height: 100vh;
+    width: auto;
+    margin: auto;
+}
+
 
 .pre,
 .next{
     cursor: grab;
     position: absolute;
-    top: 50%;
+    top: 35%;
     width: auto;
     margin: 0 20px;
     color: #fafafa!important;
