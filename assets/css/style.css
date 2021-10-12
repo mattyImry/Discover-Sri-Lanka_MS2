@@ -183,6 +183,7 @@ input[type="text"]{
     input[type="text1"]{
         font-size: 14px;
     }
+
     .messagebox, .subjectbox, .emailbox, .namebox{
         margin-bottom: 10px;
     }
@@ -194,17 +195,24 @@ input[type="text"]{
         margin-top: 0px!important;
         text-align: center!important;
     }
+
     .slideshow{
         display: none;
     }
+
     .pic-mobile{
         display: initial!important;
         
     }  
+    
     .title-polonna{
         color: #fafafa;
         margin-left: 0!important;
         background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .thumb-mobile {
+        display: none;
     }
  
 }
