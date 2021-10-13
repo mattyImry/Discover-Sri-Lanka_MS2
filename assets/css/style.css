@@ -182,7 +182,7 @@ input[type="text"]{
 
 /*------------MEDIA QUERY-------------*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 778px) {
     
     .intro, .map-text{
         font-size: 15px; 
@@ -238,6 +238,7 @@ input[type="text"]{
    
 /*------------CONTACTUS.html-------------*/
 
+
 .contact{
     margin-top: 8px;
     z-index: 1;
@@ -246,14 +247,18 @@ input[type="text"]{
 .background-contact{
     position: relative;
     background-image: url("../images/kalkuda5.jpg");
+    height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
 
 .jumbotron{
     background-color: rgba(0, 0, 0, 0.3);
-    margin: 40px 20px;
+    margin: 30px 20px;
+    border: 1px solid #fafafa ;
+
 }
 
 .form-control {
@@ -264,12 +269,20 @@ input[type="text"]{
     border-color: #fafafa; 
 }
 
+.form-booking {
+    margin: 0 20px;
+}
 form .form-control::placeholder{
     color: #fafafa;
+    margin: 0 20px;
 }
 
-.messagebox, .subjectbox, .emailbox, .namebox{
-    margin-bottom: 55px;
+.subjectbox, .emailbox, .namebox{
+    margin-bottom: 50px;
+}
+
+.messagebox {
+    margin-bottom: 35px;
 }
 
 .btn-submit{
