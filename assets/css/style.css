@@ -61,7 +61,7 @@ h1{
 /*-------------NAVBAR----------------*/
 
 .navbar-light {
-    background-color: rgba(0, 0, 0, 0.5) !important;
+    background-color: rgba(0, 0, 0, 0.7) !important;
 }
 
 a.nav-link{
@@ -74,8 +74,9 @@ a.nav-link{
 
 /*-------------FOOTER----------------*/
 .footer{
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     height: 40px;  
+    margin: 0 20px;
 }
 
 .copyright{
@@ -173,6 +174,10 @@ input[type="text"]{
 
 .navbar-toggler-mirissa{
     background-color: #e3edf1;
+}
+
+.nav-mirissa{
+    margin: 0 20px;
 }
 
 /*------------MEDIA QUERY-------------*/
