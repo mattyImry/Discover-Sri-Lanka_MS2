@@ -8,7 +8,7 @@ body, html {
     overflow-x: hidden;
 }
 
-.background-map{
+.background-page{
     position: relative;
     background-image: url("../images/kandi2.jpg");
     height: 100vh;
@@ -88,6 +88,13 @@ a.nav-link{
 
 /*---------------MAP----------------*/
 
+
+.background-map {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: relative;
+    height: 100vh;
+    
+}
 .map-text{
     font-family: Lato, sans-serif;
     font-size: 18px;
@@ -96,8 +103,8 @@ a.nav-link{
 }
 
 .column-map{
-    margin-top: 20px;
-    height: 350px;
+    margin: 20px 20px 0 20px;
+    height: 600px;
 }
 
 .btn-reset{
@@ -116,7 +123,7 @@ input#search-box-map.pac-target-input{
 }
 
 input[type="text"]{
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .gm-style .gm-style-iw{
@@ -214,8 +221,14 @@ input[type="text"]{
     .thumb-mobile {
         display: none;
     }
- 
+
 }
+
+@media screen and (max-width: 465px) {
+    .gmnoprint {
+        display: none;
+    }
+}   
 
    
 /*------------CONTACTUS.html-------------*/

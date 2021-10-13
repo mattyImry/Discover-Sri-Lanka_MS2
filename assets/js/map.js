@@ -13,7 +13,7 @@ function initMap() {
 // CREATING THE MAP INSIDE THE DIV WITH ID="MAP", ADDING MARKER TO MAPS WITH NAMES AND INFOs 
 
     const map = new google.maps.Map(document.getElementById("map"), mapValues);
-    const myMarks = [{"lat": 5.9448, "lng": 80.4586, "name": "Mirissa", "logo":"assets/images/beach_icon.png",                             "information":`Breath the seaside vibe, lay on white sandy beaches, <a href="mirissa.html">more                       info</a>.`},
+    const myMarks = [{"lat": 5.9448, "lng": 80.4586, "name": "Mirissa", "logo":"assets/images/beach_icon.png", "information":`Breath the seaside vibe, lay on white sandy beaches, <a href="mirissa.html">more info</a>.`},
                     {"lat": 8.6941, "lng": 81.1894, "name": "Nilaveli","logo":"assets/images/beach_icon.png", "information":`Relax to the view of an infinite beach outlined by coconat trees, <a href="nilaveli.html">more info</a>.`},
                     {"lat": 7.9384, "lng": 81.0049, "name": "Polonnaruwa","logo":"assets/images/temple_icon.png", "information":`Explore the outstanding remains of the royal ancient city of the Kingdom of Polonnaruwa <a href="polonnaruwa.html">more info</a>.`},                                                                   
                     {"lat": 8.3444, "lng": 80.3986, "name": "Anuradhapura","logo":"assets/images/temple_icon.png", "information":`One of the ancient capitals of Sri Lanka,visit the stunning ruins of the Sinhala civilization <a href="anuradhapura.html">more info</a>.`},
