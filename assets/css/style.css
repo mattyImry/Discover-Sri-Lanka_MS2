@@ -45,6 +45,15 @@ h1{
     color: #fafafa;
 }
 
+.btn-intro{
+    border: 1px solid #212529;
+    background-color: #fafafa;
+    margin: 250px 20px 20px 20px;
+    font-family: Raleway, sans-serif;
+    font-weight: 500;
+
+}
+
 /*-------------DROPDOWN----------------*/
 
 .dropdown-menu{
