@@ -242,6 +242,8 @@ input[type="text"]{
     .gmnoprint {
         display: none;
     }
+
+
 }   
 
    
@@ -304,19 +306,31 @@ form .form-control::placeholder{
 
 /*------------ANURADHAPURA.HTML-------------*/
 
-.anura-container{
+/*.anura-container{
     position: relative;
     background-image: url("../images/anura1.jpg");
     height: 70vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
+}*/
 
-.title-anura{
-    margin-top: 50px;
-    text-align: left;
+.background-anura{
+    background-color: rgba(0, 0, 0, 0.3);
+    position: relative;
+    height: 100vh;
+
 }
+.row-top-anura{
+    background-color: transparent;
+    height: 150px;
+    padding-top: 25px;
+} 
+
+ .title-anura{
+    margin-top: 20px;
+    text-align: left;
+} 
 
 /*------------POLONNARUWA.HTML-------------*/
 
