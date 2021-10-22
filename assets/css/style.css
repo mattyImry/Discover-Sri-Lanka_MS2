@@ -166,7 +166,7 @@ input[type="text"]{
 
 /*------------MIRISSA.HTML-------------*/
 
-.mirissa-container{
+/* .mirissa-container{
     position: relative;
     background-image: url("../images/mirissa1.jpg");
     height: 70vh;
@@ -174,20 +174,17 @@ input[type="text"]{
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0;
-}
+} */
 
 .title-mirissa{
     padding-bottom: 30px;
-    margin-top: 130px;
+    margin-top: 20px;
 }
 
 .navbar-toggler-mirissa{
     background-color: #e3edf1;
 }
 
-.nav-mirissa{
-    margin: 0 20px;
-}
 
 /*------------MEDIA QUERY-------------*/
 
@@ -240,15 +237,41 @@ input[type="text"]{
         margin-left: 20px;
     }
 
+    .text-out {
+        margin-top: 20px;
+    }
+
+    .info-pages {
+        margin-right: 0px;
+        padding: 0;
+        margin-bottom: 60px;
+    }
+
+    .col-img {
+        padding-right: 0;
+    }
+
+    .pages-links {
+        padding-bottom: 30px;
+    }
+
 }
 
 @media screen and (max-width: 465px) {
     .gmnoprint {
         display: none;
     }
+
 }   
 
-   
+
+@media screen and (max-width: 400px) {
+    .title-mirissa {
+        margin-top: 0;
+    }
+
+}   
+
 /*------------CONTACTUS.html-------------*/
 
 
