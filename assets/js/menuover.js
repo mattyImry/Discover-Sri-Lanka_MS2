@@ -8,6 +8,7 @@ $(document).ready(function(){
 });
 
 
-
+ /* ADD CURRENT YEAR TO FOOTER CODE */
+ $(".year").text((new Date).getFullYear());
 
 
