@@ -317,6 +317,20 @@ form .form-control::placeholder{
     background-size: cover;
 }*/
 
+.title-out,
+.img-out,
+.text-out {
+ 
+    animation: fadein 3.0s;
+ }
+
+ 
+    @keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+ 
+
 .background-anura{
     background-color: rgba(0, 0, 0, 0.3);
     position: relative;
