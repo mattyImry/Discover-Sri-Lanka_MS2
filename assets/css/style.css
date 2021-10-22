@@ -322,14 +322,12 @@ form .form-control::placeholder{
 .text-out {
  
     animation: fadein 3.0s;
- }
+}
 
- 
     @keyframes fadein {
         from { opacity: 0; }
         to   { opacity: 1; }
     }
- 
 
 .background-anura{
     background-color: rgba(0, 0, 0, 0.3);
@@ -345,7 +343,7 @@ form .form-control::placeholder{
 
  .title-anura{
     margin-top: 20px;
-    text-align: left;
+    
 } 
 
 /*------------POLONNARUWA.HTML-------------*/
@@ -360,20 +358,20 @@ form .form-control::placeholder{
 }
 
 .title-polonna{
-    margin-left: 450px;
+    
     margin-top: 20px ;
 }
 
 /*------------ELLA.HTML-------------*/
 
-.ella-container{
+/* .ella-container{
     position: relative;
     background-image: url("../images/ella.jpg");
     height: 70vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
 .title-ella{
     margin-top: 20px;
