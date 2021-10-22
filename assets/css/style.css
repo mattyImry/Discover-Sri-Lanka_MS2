@@ -17,11 +17,6 @@ body, html {
     background-size: cover;
 }
 
-.row-top{
-    background-color: transparent;
-    height: 250px;
-    padding-top: 25px;
-}   
 
 h1{
     font-family: Raleway, sans-serif;
@@ -39,7 +34,8 @@ h1{
     display: none;
 }
 
-.col-welcome, .col-map-text{
+.col-welcome, 
+.col-map-text{
     background-color: rgba(0, 0, 0, 0.3);
     margin: 20px;
     color: #fafafa;
@@ -166,16 +162,6 @@ input[type="text"]{
 
 /*------------MIRISSA.HTML-------------*/
 
-/* .mirissa-container{
-    position: relative;
-    background-image: url("../images/mirissa1.jpg");
-    height: 70vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 0;
-} */
-
 .title-mirissa{
     padding-bottom: 30px;
     margin-top: 20px;
@@ -188,7 +174,7 @@ input[type="text"]{
 
 /*------------MEDIA QUERY-------------*/
 
-@media screen and (max-width: 778px) {
+@media screen and (max-width: 767px) {
     
     .intro, .map-text{
         font-size: 15px; 
@@ -331,15 +317,6 @@ form .form-control::placeholder{
 
 /*------------ANURADHAPURA.HTML-------------*/
 
-/*.anura-container{
-    position: relative;
-    background-image: url("../images/anura1.jpg");
-    height: 70vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}*/
-
 .title-out,
 .img-out,
 .text-out {
@@ -364,56 +341,13 @@ form .form-control::placeholder{
     padding-top: 25px;
 } 
 
- .title-anura{
-    margin-top: 20px;
-    
+.title-anura,
+.title-polonna,
+.title-ella,
+.title-nilaveli {
+    margin-top: 20px ;
 } 
 
-/*------------POLONNARUWA.HTML-------------*/
-
-/* .polonna-container{
-    position: relative;
-    background-image: url("../images/polonnaruwa1.jpg");
-    height: 70vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
-
-.title-polonna{
-    
-    margin-top: 20px ;
-}
-
-/*------------ELLA.HTML-------------*/
-
-/* .ella-container{
-    position: relative;
-    background-image: url("../images/ella.jpg");
-    height: 70vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
-
-.title-ella{
-    margin-top: 20px;
-}
-
-/*------------NILAVELI.HTML-------------*/
-
-/* .nilaveli-container{
-    position: relative;
-    background-image: url("../images/nilaveli.jpg");
-    height: 70vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
-
-.title-nilaveli{
-    margin-top: 20px;
-}
 
 /*------------GALLERY.HTML-------------*/
 
