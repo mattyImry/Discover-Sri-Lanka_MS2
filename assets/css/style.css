@@ -371,14 +371,14 @@ form .form-control::placeholder{
 
 /*------------POLONNARUWA.HTML-------------*/
 
-.polonna-container{
+/* .polonna-container{
     position: relative;
     background-image: url("../images/polonnaruwa1.jpg");
     height: 70vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
 .title-polonna{
     
