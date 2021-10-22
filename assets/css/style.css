@@ -266,7 +266,7 @@ input[type="text"]{
 
 
 @media screen and (max-width: 400px) {
-    .title-mirissa {
+    .title-mirissa {    
         margin-top: 0;
     }
 
@@ -402,14 +402,14 @@ form .form-control::placeholder{
 
 /*------------NILAVELI.HTML-------------*/
 
-.nilaveli-container{
+/* .nilaveli-container{
     position: relative;
     background-image: url("../images/nilaveli.jpg");
     height: 70vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
 .title-nilaveli{
     margin-top: 20px;
@@ -449,7 +449,6 @@ hr {
     width: auto;
     margin: auto;
 }
-
 
 .pre,
 .next{
