@@ -48,7 +48,7 @@ h1{
 .btn-intro{
     border: 1px solid #212529;
     background-color: #fafafa;
-    margin: 250px 20px 20px 20px;
+    margin: 250px 20px 20px 150px;
     font-family: Raleway, sans-serif;
     font-weight: 500;
 
@@ -236,14 +236,16 @@ input[type="text"]{
         display: none;
     }
 
+    .btn-intro {
+        margin-left: 20px;
+    }
+
 }
 
 @media screen and (max-width: 465px) {
     .gmnoprint {
         display: none;
     }
-
-
 }   
 
    
